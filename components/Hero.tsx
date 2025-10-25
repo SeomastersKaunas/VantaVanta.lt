@@ -13,6 +13,7 @@ const Hero = () => {
           src="/hero-bg.png"
           alt="A dark, lush forest with tall pine trees"
           fill
+          priority
           className="object-cover"
           sizes="100vw"
         />

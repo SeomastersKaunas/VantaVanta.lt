@@ -41,7 +41,7 @@ const ProductCard = ({ product }: { product: any }) => {
 const ProductShowcase = ({ products }: { products: any[] }) => {
   return (
     <section className="bg-white py-16 sm:py-24">
-      <div className="mx-auto max-w-[1440px] flex justify-between flex-wrap gap-8 px-4 lg:gap-24 lg:px-8">
+      <div className="mx-auto max-w-[1440px] flex justify-between flex-wrap md:flex-nowrap gap-8 px-4 lg:gap-24 lg:px-8">
         <div className="relative h-[315px] max-w-[472px] w-full shrink-0">
           <Image
             src="/vanta-showcase.jpg"

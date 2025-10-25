@@ -8,7 +8,7 @@ const StorySection = () => {
 
   return (
     <section className=" py-16 sm:py-24">
-      <div className="mx-auto max-w-[1440px] flex items-center justify-between flex-wrap gap-y-12 gap-x-24 px-4 lg:px-8">
+      <div className="mx-auto max-w-[1440px] flex items-center justify-between flex-wrap md:flex-nowrap gap-y-12 gap-x-24 px-4 lg:px-8">
 
         <figure className="flex flex-col shrink-0 ">
           <div className="relative aspect-square max-w-[472px] w-full shrink-0 ">
