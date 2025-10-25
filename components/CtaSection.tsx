@@ -10,18 +10,20 @@ const CtaSection = () => {
   return (
     <section className="relative max-w-[1440px] mx-auto px-4 lg:px-8">
       <div className=" relative  py-12 sm:py-20 w-full">
-        {/* Background Image & Overlay */}
+
         <div className="absolute inset-0 z-0">
           <Image
             src="/cta-bg.jpg"
             alt="Warm interior of a traditional wooden sauna"
             fill
             className="object-cover"
+            sizes="100vw"
+
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
 
-        {/* Content */}
+
         <div className="relative z-10 px-4 md:px-[100px]">
           <div className="">
             <h2 className="text-[35px] max-w-[450px] font-medium text-white  leading-[100%] tracking-[-1.2px]">

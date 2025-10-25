@@ -1,15 +1,17 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
+import { Image as SanityImage } from "sanity";
+import { urlFor } from "@/sanity/lib/image";
 
 const FullScreenModal = ({
   src,
   alt,
   onClose,
 }: {
-  src: string;
+  src: SanityImage;
   alt: string;
   onClose: () => void;
 }) => {
@@ -19,9 +21,7 @@ const FullScreenModal = ({
         onClose();
       }
     };
-
     window.addEventListener("keydown", handleKeyDown);
-
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
@@ -29,23 +29,28 @@ const FullScreenModal = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+      className="fixed inset-0 z-50 flex animate-fade-in items-center justify-center bg-black/80 p-4"
       onClick={onClose}
     >
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 z-50 text-white transition-opacity hover:opacity-75"
+        className="absolute top-4 right-4 cursor-pointer z-50 text-white transition-opacity hover:opacity-75"
         aria-label="Close image viewer"
       >
         <X size={32} />
       </button>
-
-      {/* The image container. We stop propagation so clicking the image doesn't close the modal. */}
       <div
         className="relative h-full w-full max-h-[90vh] max-w-[90vw]"
         onClick={(e) => e.stopPropagation()}
       >
-        <Image src={src} alt={alt} fill className="object-contain" />
+        <Image
+          src={urlFor(src).url()}
+          alt={alt}
+          fill
+          className="object-contain"
+          sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 70vw"
+
+        />
       </div>
     </div>
   );
@@ -55,9 +60,17 @@ const ProductImageGallery = ({
   images,
   productName,
 }: {
-  images: string[];
+  images: SanityImage[];
   productName: string;
 }) => {
+  if (!images || images.length === 0) {
+    return (
+      <div className="aspect-square w-full bg-[#F2F2F2] flex items-center justify-center">
+        <p>No Image Available</p>
+      </div>
+    );
+  }
+
   const [mainImage, ...thumbnails] = images;
   const [selectedImage, setSelectedImage] = useState(mainImage);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -65,44 +78,49 @@ const ProductImageGallery = ({
   return (
     <>
       <div className="flex flex-col gap-4">
-        {/* Main Image - now clickable */}
         <div
-          className="relative aspect-square w-full cursor-pointer bg-gray-100 p-4 transition-transform hover:scale-105"
-          onClick={() => setIsModalOpen(true)}
+          className="relative aspect-square w-full flex items-center justify-center cursor-pointer bg-[#F2F2F2] p-4 "
+          onClick={() => {
+            setIsModalOpen(true);
+            setSelectedImage(mainImage);
+          }}
         >
           <Image
-            src={selectedImage}
+            src={urlFor(mainImage).url()}
             alt={`Main image of ${productName}`}
             fill
             priority
-            className="object-contain"
+            className="object-contain transition-transform hover:scale-105 max-w-[85%] w-full mx-auto"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 600px"
+
           />
         </div>
 
-        {/* Thumbnails */}
-        <div className="grid grid-cols-3 gap-4">
-          {thumbnails.map((thumb, index) => (
-            <button
-              key={index}
-              onClick={() => setSelectedImage(thumb)}
-              className={`relative aspect-square w-full transition-opacity hover:opacity-80 ${
-                selectedImage === thumb
-                  ? "ring-2 ring-gray-900 ring-offset-2"
-                  : ""
-              }`}
-            >
-              <Image
-                src={thumb}
-                alt={`Thumbnail ${index + 1} of ${productName}`}
-                fill
-                className="object-cover"
-              />
-            </button>
-          ))}
-        </div>
+        {thumbnails.length > 0 && (
+          <div className="grid grid-cols-2 gap-4">
+            {thumbnails.map((thumb, index) => (
+              <button
+                key={thumb._key || (thumb as any).asset._ref || index}
+                onClick={() => {
+                  setIsModalOpen(true);
+                  setSelectedImage(thumb);
+                }}
+                className={`relative aspect-square w-full transition-opacity hover:opacity-80`}
+              >
+                <Image
+                  src={urlFor(thumb).url()}
+                  alt={`Thumbnail ${index + 1} of ${productName}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 150px"
+
+                />
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* The Modal is rendered here when isModalOpen is true */}
       {isModalOpen && (
         <FullScreenModal
           src={selectedImage}

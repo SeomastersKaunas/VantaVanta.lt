@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@portabletext/react": "^4.0.3",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.11.0",
     "lucide-react": "^0.547.0",

@@ -13,17 +13,6 @@ export const translations = {
         "Autentiškos beržo, ąžuolo ir kanadinio ąžuolo vantos didmeniniams užsakymams.",
       button: "MŪSŲ VANTOS",
     },
-    products: {
-      // Product 1
-      quercus_category: "QUERCUS",
-      quercus_name: "ĄŽUOLO",
-      // Product 2
-      quercus_rubra_category: "QUERCUS RUBRA",
-      quercus_rubra_name: "KANADOS ĄŽUOLO",
-      // Product 3
-      betula_category: "BETULA",
-      betula_name: "BERŽO",
-    },
     story: {
       image_caption_line1: "Meistras Jonas, Dzūkijos miškai, 1982",
       image_caption_line2: "Master Jonas, Forests of Dzūkija",
@@ -44,27 +33,18 @@ export const translations = {
     footer: {
       copyright: "© 2025 VANTA VANTA. VISOS TEISĖS SAUGOMOS",
     },
-     product_page: {
-      // Oak Vanta
-      oak_vanta_name: 'Ąžuolo Vanta',
-      oak_vanta_description: 'Įneškite miško stiprybės į savo pirtį su mūsų ąžuolo vanta. Žinomos dėl savo ilgaamžiškumo ir raminančių savybių, ąžuolo vantos išskiria natūralų, medienos aromatą, kuris stiprina atsipalaidavimą ir skatina ramybės jausmą.',
-      oak_vanta_sessions: 'Tinkamai paruoštos mūsų vantos gali tarnauti 4-5 ar net daugiau seansų, priklausomai nuo jūsų stiliaus.',
-      oak_vanta_benefits_title: 'Pagrindinės Ąžuolo Vantos Naudos:',
-      oak_vanta_benefits_item1: 'Antiseptinės Savybės',
-      oak_vanta_benefits_item2: 'Pagerėjusi Kraujo Cirkuliacija',
-      oak_vanta_benefits_item3: 'Odos Elastingumas',
-      oak_vanta_specs_title: 'Specifikacijos:',
-      oak_vanta_specs_dry: 'Sausa',
-      oak_vanta_specs_weight: 'Svoris: 300 g / 0.6 - 0.8 lb.',
-      oak_vanta_specs_width: 'Plotis: 26 - 28 cm / 10 - 11 colių',
-      oak_vanta_specs_length: 'Ilgis: 55-56 cm / 22 coliai',
-      oak_vanta_materials_title: 'Medžiagos:',
-      oak_vanta_materials_branches: 'Ąžuolo šakos',
-      oak_vanta_materials_rope: 'Džiuto virvė',
-      oak_vanta_disclaimer: 'Atkreipkite dėmesį: Visi dydžiai ir svoriai yra apytiksliai. Kiekviena vanta yra rankų darbo, todėl gali pasitaikyti formos, dydžio ir svorio neatitikimų. Nėra dviejų visiškai vienodų vantų — tai yra jų natūralaus žavesio ir meistriškumo dalis.',
-      
-      // Generic
-      cta_button: 'Gauti pasiūlymą',
+    quote_form: {
+      name_label: "Vardas",
+      contact_label: "Jūsų El. paštas / Tel. numeris",
+      whisk_label: "Jūs dominančios vantos",
+      whisk_option_oak: "European Oak",
+      whisk_option_canadian: "Canadian Oak",
+      whisk_option_birch: "Birch",
+      quantity_label: "Dominantis kiekis",
+      quantity_option_50: "50 vnt.",
+      quantity_option_100: "100 vnt.",
+      quantity_option_200: "200+ vnt.",
+      submit_button: "Gauti pasiūlymą",
     },
   },
   en: {
@@ -81,20 +61,9 @@ export const translations = {
         "Authentic birch, oak, and Canadian oak sauna whisks for wholesale orders.",
       button: "OUR WHISKS",
     },
-    products: {
-      // Product 1
-      quercus_category: "QUERCUS",
-      quercus_name: "OAK",
-      // Product 2
-      quercus_rubra_category: "QUERCUS RUBRA",
-      quercus_rubra_name: "CANADIAN OAK",
-      // Product 3
-      betula_category: "BETULA",
-      betula_name: "BIRCH",
-    },
     story: {
       image_caption_line1: "Master Jonas, Forests of Dzūkija, 1982",
-      image_caption_line2: "Master Jonas, Forests of Dzūkija", // This line is the same in the design
+      image_caption_line2: "Master Jonas, Forests of Dzūkija",
       title: "vanta vanta® story",
       subtitle_line1: "FROM TWIG TO WHISK:",
       subtitle_line2: "A PROMISE OF QUALITY",
@@ -112,27 +81,18 @@ export const translations = {
     footer: {
       copyright: "© 2025 VANTA VANTA. ALL RIGHTS RESERVED",
     },
-     product_page: {
-      // Oak Vanta
-      oak_vanta_name: 'Oak Vanta',
-      oak_vanta_description: 'Bring the strength of the forest to your banya or sauna with our Oak Whisks, expertly crafted from premium oak branches. Known for their durable, calming qualities, oak whisks release a natural, woodsy fragrance that enhances relaxation and promotes a sense of peace.',
-      oak_vanta_sessions: 'If prepared right our veniks can serve you 4-5 or even more sessions depending on your style.',
-      oak_vanta_benefits_title: 'Main Oak Benefits:',
-      oak_vanta_benefits_item1: 'Antiseptic Properties',
-      oak_vanta_benefits_item2: 'Improved Blood Circulation',
-      oak_vanta_benefits_item3: 'Skin Elasticity',
-      oak_vanta_specs_title: 'Specifications:',
-      oak_vanta_specs_dry: 'Dry',
-      oak_vanta_specs_weight: 'Weight: 300 g / 0.6 - 0.8 lb.',
-      oak_vanta_specs_width: 'Width: 26 - 28 cm / 10 - 11 inch',
-      oak_vanta_specs_length: 'Length: 55-56 cm / 22 inch',
-      oak_vanta_materials_title: 'Materials:',
-      oak_vanta_materials_branches: 'OAK branches',
-      oak_vanta_materials_rope: 'jute rope',
-      oak_vanta_disclaimer: 'Please note: All sizes and weights are approximate. Each venik is handmade, so variations in shape, size, and weight may occur. No two veniks are exactly alike — this is part of their natural charm and craftsmanship.',
-
-      // Generic
-      cta_button: 'Get an Offer',
+    quote_form: {
+      name_label: "Name",
+      contact_label: "Your Email / Phone number",
+      whisk_label: "Whisks you are interested in",
+      whisk_option_oak: "European Oak",
+      whisk_option_canadian: "Canadian Oak",
+      whisk_option_birch: "Birch",
+      quantity_label: "Dominant quantity",
+      quantity_option_50: "50 units",
+      quantity_option_100: "100 units",
+      quantity_option_200: "200+ units",
+      submit_button: "Get an Offer",
     },
   },
 };

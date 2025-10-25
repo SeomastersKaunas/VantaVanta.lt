@@ -35,7 +35,7 @@ export default function Header() {
                 alt="LOGOO"
                 width={1000}
                 height={1000}
-                className="h-[65px] w-auto object-contain"
+                className="h-[56px] md:h-[65px] w-auto object-contain"
               />
             </Link>
           </div>
@@ -52,7 +52,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop Language Switcher & Mobile Menu Button */}
+
           <div className="flex items-center">
             <div className="hidden md:flex items-center space-x-2">
               <button
@@ -68,7 +68,7 @@ export default function Header() {
               </button>
             </div>
 
-            {/* Mobile Menu Button */}
+
             <div className="md:hidden ml-4">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -76,9 +76,9 @@ export default function Header() {
               >
                 <span className="sr-only">Open main menu</span>
                 {isMenuOpen ? (
-                  <X className="h-6 w-6" />
+                  <X className="h-8 w-8" />
                 ) : (
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-8 w-8" />
                 )}
               </button>
             </div>
@@ -86,7 +86,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Drawer Menu */}
+
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden z-50">
           <div className="space-y-1 px-4 pt-2 pb-3">
@@ -106,9 +106,9 @@ export default function Header() {
                 className="flex w-full items-center space-x-3 rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
               >
                 <img
-                  src={locale === "lt" ? "/flags/gb.svg" : "/flags/lt.svg"}
+                  src={locale === "lt" ? "/flag-one.png" : "/flag-two.webp"}
                   alt="Switch language flag"
-                  className="h-6 w-6 rounded-sm object-cover"
+                  className="h-6 rounded-[2px] object-cover"
                 />
                 <span>{t("header.switchTo")}</span>
               </button>

@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import { useTranslations } from "@/contexts/LanguageContext";
 import Image from "next/image";
@@ -11,21 +10,21 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white mt-[100px]">
       <div className="mx-auto max-w-[1440px]  px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center min-h-[154px] justify-between gap-8 md:flex-row">
-          {/* Left Column: Logo and Tagline */}
+        <div className="flex flex-col items-center min-h-[154px] md:py-0 py-6 justify-between gap-8 md:flex-row">
+
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <Link href="/" className="group">
               <Image
                 src={"/logo-white.png"}
                 alt="LOGOO"
-                width={1000}
-                height={1000}
+                width={180}
+                height={60}
                 className="h-[75px] w-auto object-contain"
               />
             </Link>
           </div>
 
-          {/* Right Column: Contact and Copyright */}
+
           <div className="flex flex-col items-center text-center md:items-end md:text-right">
             <a
               href="tel:+37061912200"

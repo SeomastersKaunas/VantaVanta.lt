@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { useTranslations } from "@/contexts/LanguageContext";
 
@@ -9,8 +8,8 @@ const StorySection = () => {
 
   return (
     <section className=" py-16 sm:py-24">
-      <div className="mx-auto max-w-[1440px] flex items-center justify-between gap-y-12 gap-x-24 px-4 lg:px-8">
-        {/* Left Column: Image with Caption */}
+      <div className="mx-auto max-w-[1440px] flex items-center justify-between flex-wrap gap-y-12 gap-x-24 px-4 lg:px-8">
+
         <figure className="flex flex-col shrink-0 ">
           <div className="relative aspect-square max-w-[472px] w-full shrink-0 ">
             <Image
@@ -19,6 +18,7 @@ const StorySection = () => {
               width={1000}
               height={1000}
               className="object-cover w-full h-auto aspect-square"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 472px"
             />
           </div>
           <figcaption className="bg-black h-[84px] w-full flex flex-col justify-center px-6 text-base leading-[23px] tracking-[-0.7px] text-white">
@@ -29,7 +29,7 @@ const StorySection = () => {
           </figcaption>
         </figure>
 
-        {/* Right Column: Text Content */}
+
         <div className="flex flex-col justify-center">
           <h2 className="text-[31px] font-medium tracking-[-1.2px] leading-1 ">
             vanta vanta<sup className="text-[14px]">&copy;</sup> istorija
@@ -46,11 +46,11 @@ const StorySection = () => {
 
           <p
             dangerouslySetInnerHTML={{ __html: t("story.paragraph") }}
-            className="mt-6 text-[19px] leading-[27px] tracking-[-0.95px] font-light "
+            className="mt-6 text-[15px] md:text-[19px] leading-[22px] md:leading-[27px] tracking-[-0.95px] font-light "
           ></p>
 
           <div className="mt-8 border border-black bg-[#E4D7CC] p-6 px-8">
-            <p className="text-[16px] font-medium leading-[24px] tracking-[-1px] ">
+            <p className="text-[16px] font-medium leading-[22px] tracking-[-1px] ">
               {t("story.highlight_box")}
             </p>
           </div>
