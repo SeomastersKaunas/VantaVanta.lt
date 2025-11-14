@@ -5,6 +5,7 @@ import { client } from "@/sanity/lib/client";
 const productQuery = `*[_type == "product" && (slug.lt.current == $slug || slug.en.current == $slug)][0]{
   _id,
   title,
+  subTitle,
   slug,
   mainImage,
   gallery,

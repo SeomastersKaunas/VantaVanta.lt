@@ -13,6 +13,12 @@ export default defineType({
       type: "localeString",
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: "subTitle",
+      title: "Sub Title",
+      type: "localeString",
+      validation: (Rule) => Rule.required(),
+    }),
 
     defineField({
       name: "slug",

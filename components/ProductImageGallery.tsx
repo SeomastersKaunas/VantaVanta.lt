@@ -47,7 +47,7 @@ const FullScreenModal = ({
           src={urlFor(src).url()}
           alt={alt}
           fill
-          className="object-contain"
+          className="object-contain "
           sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 70vw"
 
         />
@@ -79,7 +79,7 @@ const ProductImageGallery = ({
     <>
       <div className="flex flex-col gap-4">
         <div
-          className="relative aspect-square w-full flex items-center justify-center cursor-pointer bg-[#F2F2F2] p-4 "
+          className="relative aspect-square w-full flex items-center justify-center cursor-pointer rounded-[24px] bg-[#F2F2F2] p-4 "
           onClick={() => {
             setIsModalOpen(true);
             setSelectedImage(mainImage);
@@ -90,7 +90,7 @@ const ProductImageGallery = ({
             alt={`Main image of ${productName}`}
             fill
             priority
-            className="object-contain transition-transform hover:scale-105 max-w-[85%] w-full mx-auto"
+            className="object-contain transition-transform hover:scale-105 max-w-[85%] rounded-[24px] w-full mx-auto"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 600px"
 
           />
@@ -111,7 +111,7 @@ const ProductImageGallery = ({
                   src={urlFor(thumb).url()}
                   alt={`Thumbnail ${index + 1} of ${productName}`}
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-[24px]"
                   sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 150px"
 
                 />

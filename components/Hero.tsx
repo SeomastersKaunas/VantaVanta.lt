@@ -7,8 +7,8 @@ const Hero = () => {
   const t = useTranslations();
 
   return (
-    <section className="relative flex h-[60vh] min-h-[500px] w-full items-center justify-center text-white md:h-[85vh] md:min-h-[700px]">
-      <div className="absolute inset-3 z-0 ">
+    <section className="relative flex h-[450px] w-full items-center justify-center text-white md:h-[700px] p-2 border-t border-gray-400">
+      <div className="absolute inset-2 z-0 ">
         <Image
           src="/hero-bg.png"
           alt="A dark, lush forest with tall pine trees"
@@ -20,8 +20,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
-      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1140px] items-end pb-[100px]">
-        <div className="flex flex-col items-start justify-center p-8 max-w-[450px]">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1270px] items-end md:pb-[90px] md:pl-[130px] pr-[15px]">
+        <div className="flex flex-col items-start justify-center p-8 max-w-[460px]">
           <h1 className="text-[31px] tracking-[-1px] font-medium">
             {t("hero.title")}
             <span className="inline-block border-b-2 border-white leading-[1.05]">

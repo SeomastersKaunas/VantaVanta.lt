@@ -8,7 +8,7 @@ const Footer = () => {
   const t = useTranslations();
 
   return (
-    <footer className="bg-black text-white mt-[100px]">
+    <footer className="bg-black text-white mt-[40px] md:mt-[100px]">
       <div className="mx-auto max-w-[1440px]  px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center min-h-[154px] md:py-0 py-6 justify-between gap-8 md:flex-row">
 
