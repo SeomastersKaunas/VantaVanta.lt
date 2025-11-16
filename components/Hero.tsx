@@ -7,7 +7,7 @@ const Hero = () => {
   const t = useTranslations();
 
   return (
-    <section className="relative flex h-[450px] w-full items-center justify-center text-white md:h-[700px] p-2 border-t border-gray-400">
+    <section className="relative flex h-[450px] w-full items-center justify-center text-white md:h-[700px] p-2">
       <div className="absolute inset-2 z-0 ">
         <Image
           src="/hero-bg.png"

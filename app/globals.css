@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
+html,
 body {
   font-family: var(--font-inter);
+  scroll-behavior: smooth;
 }
 
 @keyframes fade-in {

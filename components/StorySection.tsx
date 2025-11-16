@@ -7,7 +7,7 @@ const StorySection = () => {
   const t = useTranslations();
 
   return (
-    <section className="pb-[80px] md:pb-[100px]">
+    <section  id="kokybe" className="pb-[80px] md:pb-[100px]">
       <div className="mx-auto max-w-[1440px] flex items-center justify-between flex-wrap md:flex-nowrap gap-y-12 gap-x-[60px] px-4 lg:px-8">
         <figure className="flex flex-col md:w-auto w-full">
           <div className="relative w-full md:w-[415px] shrink-0 ">
