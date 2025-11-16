@@ -22,8 +22,8 @@ export default function Header() {
   };
 
   const navLinks = [
-    { href: "#", key: "header.vantos" },
-    { href: "#kokybe", key: "header.kokybe" },
+    { href: "/#productShowcase", key: "header.vantos" },
+    { href: "/#kokybe", key: "header.kokybe" },
     {
       href: "#",
       key: "header.kontaktai",

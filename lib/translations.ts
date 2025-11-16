@@ -55,8 +55,8 @@ export const translations = {
       switchTo: "Switch to Lithuanian",
     },
     hero: {
-      title: "Sauna Whisks For Your Business ",
-      title_underline: " Jūsų Verslui",
+      title: "Sauna Whisks For ",
+      title_underline: " Your Business",
       subtitle:
         "Authentic birch, oak, and Canadian oak sauna whisks for wholesale orders.",
       button: "OUR WHISKS",

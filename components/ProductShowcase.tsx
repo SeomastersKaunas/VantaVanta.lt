@@ -40,7 +40,7 @@ const ProductCard = ({ product }: { product: any }) => {
 
 const ProductShowcase = ({ products }: { products: any[] }) => {
   return (
-    <section className="bg-white pt-[80px] md:pt-[100px] pb-[54px] md:pb-[62px]">
+    <section id="productShowcase" className="bg-white pt-[80px] md:pt-[100px] pb-[54px] md:pb-[62px]">
       <div className="mx-auto max-w-[1440px] flex justify-between flex-wrap md:flex-nowrap gap-8 px-2 lg:gap-[60px] lg:px-8">
         <div className="relative h-[277px] md:max-w-[415px] w-full shrink-0">
           <Image
