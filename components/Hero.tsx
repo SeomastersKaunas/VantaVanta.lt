@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 mx-auto flex h-full w-full max-w-[1270px] items-center md:items-end md:pb-[90px] md:pl-[130px] pr-[15px]">
-        <div className="flex flex-col items-start justify-center p-[26px] md:p-8 max-w-[460px]">
+        <div className="flex flex-col items-start justify-center p-[16px] md:p-8 max-w-[460px]">
           <h1 className="text-[32px] tracking-[-1px] font-medium">
             {t("hero.title")}
             <br className="md:hidden h-0" />
