@@ -7,7 +7,7 @@ const StorySection = () => {
   const t = useTranslations();
 
   return (
-    <section  id="kokybe" className="pb-[80px] md:pb-[100px]">
+    <section  id="kokybe" className="pb-[60px] md:pb-[100px]">
       <div className="mx-auto max-w-[1440px] flex items-center justify-between flex-wrap md:flex-nowrap gap-y-12 gap-x-[60px] px-4 lg:px-8">
         <figure className="flex flex-col md:w-auto w-full">
           <div className="relative w-full md:w-[415px] shrink-0 ">
@@ -20,7 +20,7 @@ const StorySection = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 472px"
             />
           </div>
-          <figcaption className="bg-black h-[84px] w-full flex flex-col justify-center px-6 text-base leading-[23px] font-[600] tracking-[-0.7px] text-white">
+          <figcaption className="bg-black h-[100px] md:h-[84px] w-full flex flex-col justify-center px-6 text-[20px] md:text-base leading-[23px] font-[600] tracking-[-0.7px] text-white">
             <p>{t("story.image_caption_line1")}</p>
             <p className="font-light text-white/80 text-[14px]">
               {t("story.image_caption_line2")}

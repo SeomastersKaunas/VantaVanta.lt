@@ -17,7 +17,7 @@ const ProductCard = ({ product }: { product: any }) => {
       href={`/products/${slug}`}
       className="group flex flex-col items-center text-center"
     >
-      <div className="relative h-[210px] aspect-square! w-full bg-[#F2F2F2] p-4 flex items-center justify-center group transition-colors group-hover:bg-neutral-200">
+      <div className="relative h-[300px] md:h-[210px] aspect-square! w-full bg-[#F2F2F2] p-4 flex items-center justify-center group transition-colors group-hover:bg-neutral-200">
         <Image
           src={urlFor(product.mainImage)?.url()}
           alt={title}
@@ -40,9 +40,9 @@ const ProductCard = ({ product }: { product: any }) => {
 
 const ProductShowcase = ({ products }: { products: any[] }) => {
   return (
-    <section id="productShowcase" className="bg-white pt-[80px] md:pt-[100px] pb-[54px] md:pb-[62px]">
-      <div className="mx-auto max-w-[1440px] flex justify-between flex-wrap md:flex-nowrap gap-8 px-2 lg:gap-[60px] lg:px-8">
-        <div className="relative h-[277px] md:max-w-[415px] w-full shrink-0">
+    <section id="productShowcase" className="bg-white pt-[40px] md:pt-[100px] pb-[54px] md:pb-[62px]">
+      <div className="mx-auto max-w-[1440px] flex justify-between flex-wrap md:flex-nowrap gap-8 px-3 lg:gap-[60px] lg:px-8">
+        <div className="relative h-[277px] md:max-w-[415px] w-full shrink-0 md:block hidden">
           <Image
             src="/vanta-showcase.jpg"
             alt="Man in a sauna holding a vanta whisk"
@@ -52,7 +52,7 @@ const ProductShowcase = ({ products }: { products: any[] }) => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 w-full sm:gap-[15px]">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 w-full sm:gap-[15px]">
           {products.map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}
