@@ -10,13 +10,13 @@ export const translations = {
       title: "Pirties Vantos ",
       title_underline: "Jūsų Verslui",
       subtitle:
-        "Autentiškos beržo, ąžuolo ir kanadinio ąžuolo vantos didmeniniams užsakymams.",
+        "Autentiškos beržo, ąžuolo <br className='md:hidden' /> ir kanadinio ąžuolo vantos didmeniniams užsakymams.",
       button: "MŪSŲ VANTOS",
     },
     story: {
       image_caption_line1: "Meistras Jonas, Dzūkijos miškai, 1982",
       image_caption_line2: "Master Jonas, Forests of Dzūkija",
-      title: "vanta vanta® istorija",
+      title: `vanta vanta<sup className="text-[14px]">&copy;</sup> istorija`,
       subtitle_line1: "NUO ŠAKELĖS IKI VANTOS:",
       subtitle_line2: "KOKYBĖS PAŽADAS",
       paragraph:
@@ -64,7 +64,7 @@ export const translations = {
     story: {
       image_caption_line1: "Master Jonas, Forests of Dzūkija, 1982",
       image_caption_line2: "Master Jonas, Forests of Dzūkija",
-      title: "vanta vanta® story",
+      title: `vanta vanta<sup className="text-[14px]">&copy;</sup> history`,
       subtitle_line1: "FROM TWIG TO WHISK:",
       subtitle_line2: "A PROMISE OF QUALITY",
       paragraph:

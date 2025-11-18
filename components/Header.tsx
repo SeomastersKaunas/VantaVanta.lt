@@ -171,7 +171,10 @@ export default function Header() {
                   {isLangDropdownOpen && (
                     <div className="mt-2 w-full bg-white rounded-md shadow-lg z-50">
                       <button
-                        onClick={() => handleLanguageChange("lt")}
+                        onClick={() => {
+                          handleLanguageChange("lt");
+                          setIsMenuOpen(false);
+                        }}
                         className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       >
                         <img
@@ -182,7 +185,10 @@ export default function Header() {
                         Lietuvių
                       </button>
                       <button
-                        onClick={() => handleLanguageChange("en")}
+                        onClick={() => {
+                          handleLanguageChange("en");
+                          setIsMenuOpen(false);
+                        }}
                         className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       >
                         <img

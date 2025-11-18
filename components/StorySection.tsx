@@ -7,7 +7,7 @@ const StorySection = () => {
   const t = useTranslations();
 
   return (
-    <section  id="kokybe" className="pb-[60px] md:pb-[100px]">
+    <section id="kokybe" className="pb-[60px] md:pb-[100px]">
       <div className="mx-auto max-w-[1440px] flex items-center justify-between flex-wrap md:flex-nowrap gap-y-12 gap-x-[60px] px-4 lg:px-8">
         <figure className="flex flex-col md:w-auto w-full">
           <div className="relative w-full md:w-[415px] shrink-0 ">
@@ -29,8 +29,11 @@ const StorySection = () => {
         </figure>
 
         <div className="flex flex-col justify-center">
-          <h2 className="text-[31px] font-medium tracking-[-1.2px] leading-1 ">
-            vanta vanta<sup className="text-[14px]">&copy;</sup> istorija
+          <h2
+            dangerouslySetInnerHTML={{ __html: t("story.title") }}
+            className="text-[31px] font-medium tracking-[-1.2px] leading-1 "
+          >
+            {/* vanta vanta istorija */}
           </h2>
 
           <div className="mt-6">
