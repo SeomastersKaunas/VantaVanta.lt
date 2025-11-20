@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "My Multilingual App",
-  description: "An app that supports multiple languages using Next.js",
+  title: "Wholesale Sauna Whisks | Handmade B2B Supply | VantaVanta",
+  description: "Premium birch & oak sauna whisks for SPAs. Authentic handmade quality from Lithuania. Wholesale orders only (min 50 pcs).",
 };
 
 export default function RootLayout({
