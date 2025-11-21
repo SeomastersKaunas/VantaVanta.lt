@@ -8,10 +8,11 @@ export const dynamic = "force-dynamic";
 
 const productsQuery = `*[_type == "product"]{
   _id,
-  "title": title,
-  "slug": slug,
-  "category": category,
-  "mainImage": mainImage,
+  title,
+  subTitle,
+  slug,
+  category,
+  mainImage,
 }`;
 
 export default async function Home() {

@@ -9,7 +9,7 @@ const ProductCard = ({ product }: { product: any }) => {
   const { locale } = useLanguage();
 
   const title = product.title?.[locale] || "No title";
-  const category = product.category?.[locale] || "No category";
+  const category = product.subTitle?.[locale] || "No category";
   const slug = product.slug?.[locale]?.current || "";
 
   return (
