@@ -4,6 +4,8 @@ import ProductShowcase from "@/components/ProductShowcase";
 import StorySection from "@/components/StorySection";
 import { client } from "@/sanity/lib/client";
 
+export const dynamic = "force-dynamic";
+
 const productsQuery = `*[_type == "product"]{
   _id,
   "title": title,
@@ -13,7 +15,7 @@ const productsQuery = `*[_type == "product"]{
 }`;
 
 export default async function Home() {
-  const products = await client.fetch(productsQuery);
+  const products = await client.fetch(productsQuery, {}, { cache: "no-store" });
 
   return (
     <div className="">
