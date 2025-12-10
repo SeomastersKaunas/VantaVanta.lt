@@ -4,7 +4,13 @@ import { client } from "@/sanity/lib/client";
 
 export const dynamic = "force-dynamic";
 
-const productQuery = `*[_type == "product" && (slug.lt.current == $slug || slug.en.current == $slug)][0]{
+const productQuery = `*[_type == "product" && (
+  slug.lt.current == $slug || 
+  slug.en.current == $slug || 
+  slug.ru.current == $slug || 
+  slug.pl.current == $slug || 
+  slug.de.current == $slug
+)][0]{
   _id,
   title,
   subTitle,
@@ -22,6 +28,7 @@ export default async function ProductPage({
   params: { slug: string };
 }) {
   const { slug } = await params;
+
   const product = await client.fetch(
     productQuery,
     {

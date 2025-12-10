@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslations } from "@/contexts/LanguageContext";
-import { ArrowRight, Check, X } from "lucide-react";
+import { ArrowRight, Check, X, Loader2 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -55,6 +55,11 @@ const QuoteModal = ({
   const t = useTranslations();
   const modalRef = useRef<HTMLDivElement>(null);
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
+
   const [formData, setFormData] = useState({
     name: "",
     contact: "",
@@ -77,10 +82,43 @@ const QuoteModal = ({
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    onClose();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("/api/send-quote", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+
+        setFormData({
+          name: "",
+          contact: "",
+          whisks: { oak: false, canadian: false, birch: false },
+          quantity: "50",
+        });
+
+        setTimeout(() => {
+          onClose();
+          setSubmitStatus("idle");
+        }, 2000);
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   useEffect(() => {
@@ -127,107 +165,143 @@ const QuoteModal = ({
           </Link>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
-          <div>
-            <label
-              htmlFor="name"
-              className="block text-[14px] font-medium text-gray-800 md:text-[17px]"
-            >
-              {t("quote_form.name_label")}{" "}
-              <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              required
-              value={formData.name}
-              onChange={handleChange}
-              className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
-            />
+        {submitStatus === "success" ? (
+          <div className="flex flex-col items-center justify-center py-10 text-center animate-fade-in">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-green-100 mb-6">
+              <Check className="h-10 w-10 text-green-600" />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              Thank You!
+            </h3>
+            <p className="text-gray-600">
+              Your quote request has been sent successfully.
+            </p>
           </div>
-
-          <div>
-            <label
-              htmlFor="contact"
-              className="block text-[14px] font-medium text-gray-800 md:text-[17px]"
-            >
-              {t("quote_form.contact_label")}{" "}
-              <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              name="contact"
-              id="contact"
-              required
-              value={formData.contact}
-              onChange={handleChange}
-              className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
-            />
-          </div>
-
-          <div>
-            <label className="block text-[14px] font-medium text-gray-800 md:text-[17px]">
-              {t("quote_form.whisk_label")}{" "}
-              <span className="text-red-500">*</span>
-            </label>
-            <div className="mt-3 space-y-3 md:mt-4 md:space-y-4">
-              <CustomCheckbox
-                id="oak"
-                name="oak"
-                label={t("quote_form.whisk_option_oak")}
-                checked={formData.whisks.oak}
-                onChange={handleCheckboxChange}
-              />
-              <CustomCheckbox
-                id="canadian"
-                name="canadian"
-                label={t("quote_form.whisk_option_canadian")}
-                checked={formData.whisks.canadian}
-                onChange={handleCheckboxChange}
-              />
-              <CustomCheckbox
-                id="birch"
-                name="birch"
-                label={t("quote_form.whisk_option_birch")}
-                checked={formData.whisks.birch}
-                onChange={handleCheckboxChange}
+        ) : (
+          <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-[14px] font-medium text-gray-800 md:text-[17px]"
+              >
+                {t("quote_form.name_label")}{" "}
+                <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+                disabled={isSubmitting}
+                className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
               />
             </div>
-          </div>
 
-          <div>
-            <label
-              htmlFor="quantity"
-              className="block text-[14px] font-medium text-gray-800 md:text-[17px]"
-            >
-              {t("quote_form.quantity_label")}{" "}
-              <span className="text-red-500">*</span>
-            </label>
-            <select
-              id="quantity"
-              name="quantity"
-              value={formData.quantity}
-              onChange={handleChange}
-              className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
-            >
-              <option value="50">{t("quote_form.quantity_option_50")}</option>
-              <option value="100">{t("quote_form.quantity_option_100")}</option>
-              <option value="200">{t("quote_form.quantity_option_200")}</option>
-            </select>
-          </div>
+            <div>
+              <label
+                htmlFor="contact"
+                className="block text-[14px] font-medium text-gray-800 md:text-[17px]"
+              >
+                {t("quote_form.contact_label")}{" "}
+                <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="contact"
+                id="contact"
+                required
+                value={formData.contact}
+                onChange={handleChange}
+                disabled={isSubmitting}
+                className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
+              />
+            </div>
 
-          <button
-            type="submit"
-            className="group flex w-full cursor-pointer items-center justify-between rounded-lg bg-[#0F543F] px-6 py-3 text-lg font-medium text-white transition-colors hover:bg-[#0d5741] md:rounded-md md:px-8 md:py-4 md:text-[26px] md:-tracking-[1.2px]"
-          >
-            <span>{t("quote_form.submit_button")}</span>
-            <ArrowRight
-              className="h-6 w-6 transition-transform group-hover:translate-x-1 md:h-10 md:w-10"
-              aria-hidden="true"
-            />
-          </button>
-        </form>
+            <div>
+              <label className="block text-[14px] font-medium text-gray-800 md:text-[17px]">
+                {t("quote_form.whisk_label")}{" "}
+                <span className="text-red-500">*</span>
+              </label>
+              <div className="mt-3 space-y-3 md:mt-4 md:space-y-4">
+                <CustomCheckbox
+                  id="oak"
+                  name="oak"
+                  label={t("quote_form.whisk_option_oak")}
+                  checked={formData.whisks.oak}
+                  onChange={handleCheckboxChange}
+                />
+                <CustomCheckbox
+                  id="canadian"
+                  name="canadian"
+                  label={t("quote_form.whisk_option_canadian")}
+                  checked={formData.whisks.canadian}
+                  onChange={handleCheckboxChange}
+                />
+                <CustomCheckbox
+                  id="birch"
+                  name="birch"
+                  label={t("quote_form.whisk_option_birch")}
+                  checked={formData.whisks.birch}
+                  onChange={handleCheckboxChange}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor="quantity"
+                className="block text-[14px] font-medium text-gray-800 md:text-[17px]"
+              >
+                {t("quote_form.quantity_label")}{" "}
+                <span className="text-red-500">*</span>
+              </label>
+              <select
+                id="quantity"
+                name="quantity"
+                value={formData.quantity}
+                onChange={handleChange}
+                disabled={isSubmitting}
+                className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
+              >
+                <option value="50">{t("quote_form.quantity_option_50")}</option>
+                <option value="100">
+                  {t("quote_form.quantity_option_100")}
+                </option>
+                <option value="200">
+                  {t("quote_form.quantity_option_200")}
+                </option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className={`group flex w-full cursor-pointer items-center justify-between rounded-lg px-6 py-3 text-lg font-medium text-white transition-colors md:rounded-md md:px-8 md:py-4 md:text-[26px] md:-tracking-[1.2px]
+                ${isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-[#0F543F] hover:bg-[#0d5741]"}`}
+            >
+              <span>
+                {isSubmitting ? "Sending..." : t("quote_form.submit_button")}
+              </span>
+
+              {isSubmitting ? (
+                <Loader2 className="h-6 w-6 animate-spin md:h-10 md:w-10" />
+              ) : (
+                <ArrowRight
+                  className="h-6 w-6 transition-transform group-hover:translate-x-1 md:h-10 md:w-10"
+                  aria-hidden="true"
+                />
+              )}
+            </button>
+
+            {submitStatus === "error" && (
+              <p className="text-red-500 text-center mt-2">
+                Failed to send. Please try again.
+              </p>
+            )}
+          </form>
+        )}
       </div>
     </div>
   );

@@ -16,6 +16,14 @@ export default function Header() {
   const t = useTranslations();
   const { setLocale } = useLanguage();
 
+  const languages = [
+    { code: "lt", label: "Lietuvių", flag: "/flag-one.png" },
+    { code: "en", label: "English", flag: "/flag-two.webp" },
+    { code: "ru", label: "Русский", flag: "/falg-ru.png" },
+    { code: "pl", label: "Polski", flag: "/flag-pl.png" },
+    { code: "de", label: "Deutsch", flag: "/flag-gr.png" },
+  ];
+
   const handleLanguageChange = (newLocale: any) => {
     setLocale(newLocale);
     setIsLangDropdownOpen(false);
@@ -56,8 +64,9 @@ export default function Header() {
                 <Image
                   src={"/logo.jpg"}
                   alt="LOGOO"
-                  width={1000}
-                  height={1000}
+                  width={200}
+                  height={200}
+                  priority
                   className="h-[56px] md:h-[64px] w-auto object-contain"
                 />
               </Link>
@@ -94,28 +103,20 @@ export default function Header() {
                 <div
                   className={`${isLangDropdownOpen ? "w-32 h-auto" : "w-0 h-0 overflow-hidden"} absolute top-full right-0 mt-2  bg-white rounded-md shadow-lg z-50`}
                 >
-                  <button
-                    onClick={() => handleLanguageChange("lt")}
-                    className="flex items-center w-full cursor-pointer px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    <img
-                      src="/flag-one.png"
-                      alt="Lithuanian flag"
-                      className="h-4 w-6 mr-2 object-cover"
-                    />
-                    Lietuvių
-                  </button>
-                  <button
-                    onClick={() => handleLanguageChange("en")}
-                    className="flex items-center w-full cursor-pointer px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    <img
-                      src="/flag-two.webp"
-                      alt="British flag"
-                      className="h-4 w-6 mr-2 object-cover"
-                    />
-                    English
-                  </button>
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => handleLanguageChange(lang.code)}
+                      className="flex items-center w-full cursor-pointer px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      <img
+                        src={lang.flag}
+                        alt={`${lang.label} flag`}
+                        className="h-4 w-6 mr-2 object-cover"
+                      />
+                      {lang.label}
+                    </button>
+                  ))}
                 </div>
               </div>
 
@@ -170,34 +171,23 @@ export default function Header() {
                   </button>
                   {isLangDropdownOpen && (
                     <div className="mt-2 w-full bg-white rounded-md shadow-lg z-50">
-                      <button
-                        onClick={() => {
-                          handleLanguageChange("lt");
-                          setIsMenuOpen(false);
-                        }}
-                        className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        <img
-                          src="/flag-one.png"
-                          alt="Lithuanian flag"
-                          className="h-4 w-6 mr-2 object-cover"
-                        />
-                        Lietuvių
-                      </button>
-                      <button
-                        onClick={() => {
-                          handleLanguageChange("en");
-                          setIsMenuOpen(false);
-                        }}
-                        className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        <img
-                          src="/flag-two.webp"
-                          alt="British flag"
-                          className="h-4 w-6 mr-2 object-cover"
-                        />
-                        English
-                      </button>
+                      {languages.map((lang) => (
+                        <button
+                          key={lang.code}
+                          onClick={() => {
+                            handleLanguageChange(lang.code);
+                            setIsMenuOpen(false);
+                          }}
+                          className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          <img
+                            src={lang.flag}
+                            alt={`${lang.label} flag`}
+                            className="h-4 w-6 mr-2 object-cover"
+                          />
+                          {lang.label}
+                        </button>
+                      ))}
                     </div>
                   )}
                 </div>

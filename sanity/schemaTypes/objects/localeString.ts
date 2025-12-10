@@ -3,19 +3,21 @@ import { supportedLanguages } from "@/sanity/lib/i18n";
 
 export default defineType({
   name: "localeString",
-  title: "Localised string",
+  title: "Localized String",
   type: "object",
+
   fieldsets: [
     {
       title: "Translations",
       name: "translations",
-      options: { collapsible: true },
+      options: { collapsible: true, collapsed: false },
     },
   ],
+
   fields: supportedLanguages.map((lang) =>
     defineField({
-      title: lang.title,
       name: lang.id,
+      title: lang.title,
       type: "string",
       fieldset: lang.isDefault ? undefined : "translations",
     })

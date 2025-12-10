@@ -3,9 +3,13 @@
 import { createContext, useState, useContext, ReactNode } from "react";
 import { translations } from "@/lib/translations";
 
+// 1. Automatically define the Locale type based on the keys in your translations object.
+// This results in: "lt" | "en" | "ru" | "pl" | "de" automatically.
+export type Locale = keyof typeof translations;
+
 interface LanguageContextType {
-  locale: "lt" | "en";
-  setLocale: (locale: "lt" | "en") => void;
+  locale: Locale;
+  setLocale: (locale: Locale) => void;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
@@ -13,7 +17,8 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [locale, setLocale] = useState<"lt" | "en">("lt");
+  // Default language remains 'lt', but type allows any defined language
+  const [locale, setLocale] = useState<Locale>("lt");
 
   return (
     <LanguageContext.Provider value={{ locale, setLocale }}>
@@ -36,6 +41,7 @@ export const useTranslations = () => {
   const t = (key: string): string => {
     const keys = key.split(".");
 
+    // Access the specific language object
     let result: any = translations[locale];
 
     for (const k of keys) {
@@ -45,6 +51,8 @@ export const useTranslations = () => {
         console.warn(
           `Translation key "${key}" not found for locale "${locale}".`
         );
+        // Fallback: Optional - check English if translation is missing in current lang
+        // return translations['en'][...]; 
         return key;
       }
     }

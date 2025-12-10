@@ -25,20 +25,21 @@ export default defineType({
       title: "Slug",
       description: "The unique URL identifier for the product.",
       type: "object",
-
       fields: supportedLanguages.map((lang) =>
         defineField({
           name: lang.id,
           title: lang.title,
           type: "slug",
           options: {
-            source: (doc) => (doc.title as any)?.[lang.id] || "",
+            source: (doc: any) =>
+              doc.title?.[lang.id] ||
+              doc.title?.[supportedLanguages[0].id] ||
+              "",
             maxLength: 96,
           },
           validation: (Rule) => Rule.required(),
         })
       ),
-      validation: (Rule) => Rule.required(),
     }),
 
     defineField({
@@ -84,7 +85,15 @@ export default defineType({
   preview: {
     select: {
       title: "title.lt",
+      subtitle: "title.en",
       media: "mainImage",
+    },
+    prepare({ title, subtitle, media }) {
+      return {
+        title: title || "No title",
+        subtitle: subtitle || "No english title",
+        media: media,
+      };
     },
   },
 });
