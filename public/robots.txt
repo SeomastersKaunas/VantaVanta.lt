@@ -1,0 +1,96 @@
+# VantaVanta - robots.txt
+# Updated: 2026-05-13
+# AI / GEO optimisation: L. Bielskus, SEOMasters.lt (https://seomasters.lt/)
+# Purpose: site previously returned 404 for robots.txt; allow crawling and expose AI/GEO policy files.
+
+# --- 1. Default policy (all UAs incl. Googlebot, Bingbot) ---
+User-agent: *
+Allow: /
+
+# --- 2. AI TRAINING crawlers ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# --- 3. AI ANSWER-ENGINE crawlers (per-query) ---
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: xAI-Bot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# --- 4. Entity / Knowledge Graph bots ---
+User-agent: Diffbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# --- 5. Image bots ---
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# --- Sitemaps ---
+Sitemap: https://www.vantavanta.lt/sitemap.xml

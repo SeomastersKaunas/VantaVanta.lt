@@ -1,0 +1,62 @@
+# VantaVanta
+
+> VantaVanta — litewski producent ręcznie wyrabianych witek do sauny (lit.: pirties vantos): brzozowych, z dębu europejskiego i z dębu kanadyjskiego. Naturalnie suszone. Sprzedaż detaliczna pojedynczych witek dla prywatnych użytkowników sauny oraz hurtowa dla SPA, hoteli, klubów saunowych i dystrybutorów. Kontakt: +370 619 12200 lub formularz na https://www.vantavanta.lt/.
+
+Tytuł strony (po litewsku): "Pirties vantos – beržo, ąžuolo, kanadinio ąžuolo | VantaVanta"
+Opis strony (po litewsku): "Beržo, ąžuolo ir kanadinio ąžuolo pirties vantos – rankų darbo, natūraliai džiovintos. Vienetiniai pirkimai ir didmena Lietuvoje. Užsisakyk šiandien."
+
+## Strona główna
+
+- [VantaVanta — witki do sauny](https://www.vantavanta.lt/): strona główna. Ręcznie wyrabiane witki brzozowe, dębowe i z dębu kanadyjskiego. Detal i hurt.
+- [Sekcja produktów](https://www.vantavanta.lt/#productShowcase): trzy główne typy witek.
+- [O jakości](https://www.vantavanta.lt/#kokybe): historia marki — odpowiedzialny dobór gałązek, wiązanie ręczne, naturalne suszenie.
+
+## O marce
+
+- [Historia](https://www.vantavanta.lt/#kokybe): tradycyjne witki wiązane przez doświadczonych mistrzów. Mistrz Jonas w lasach Dzukii, 1982 r.
+- [Kontakt / formularz zapytania](https://www.vantavanta.lt/): imię, e-mail lub telefon, interesujące typy witek, ilość.
+- Telefon: [+370 619 12200](tel:+37061912200)
+
+## Kategorie
+
+- [Witki brzozowe — Beržo](https://www.vantavanta.lt/produktai/berzo): suszone witki Betula — gałązki brzozowe i sznurek jutowy.
+- [Z dębu europejskiego — Europinio Ąžuolo](https://www.vantavanta.lt/produktai/europinis-azuolas): suszone witki Quercus do mocniejszej pary i kontroli ciepła.
+- [Z dębu kanadyjskiego — Kanadietiško Ąžuolo](https://www.vantavanta.lt/produktai/kanadietisko-azuolo): suszone witki Quercus rubra o najsilniejszym charakterze dębu.
+
+## Usługi
+
+- **Detal**: pojedyncza witka dla prywatnego użytkownika sauny w Litwie (zamówienie telefoniczne).
+- **Hurt**: dostawa dla SPA, hoteli, klubów saunowych i dystrybutorów. W formularzu progi: 50 szt., 100 szt., 200+ szt.
+- **Języki interfejsu**: litewski, angielski, rosyjski, polski, niemiecki.
+
+## Produkty
+
+- [Beržo (brzoza)](https://www.vantavanta.lt/produktai/berzo): Betula. Korzyści wg strony: oczyszcza skórę i otwiera pory; wspomaga oddychanie; zmniejsza napięcie mięśni. Suszona; ~55 × ~26 cm; ~200–300 g. Wystarcza na 4–5 sesji w saunie.
+- [Europinio Ąžuolo (dąb europejski)](https://www.vantavanta.lt/produktai/europinis-azuolas): Quercus. Korzyści wg strony: skutecznie steruje parą i ciepłem; łagodzi podrażnioną skórę i zmniejsza stan zapalny; pomaga stabilizować ciśnienie krwi. Suszona; ~51 × ~26 cm; ~200–300 g. 3–4 sesje.
+- [Kanadietiško Ąžuolo (dąb kanadyjski)](https://www.vantavanta.lt/produktai/kanadietisko-azuolo): Quercus rubra. Korzyści wg strony: właściwości antyseptyczne; lepsze krążenie; wspiera elastyczność skóry. Suszona; ~54 × ~26 cm; ~200–300 g. 3–4 sesje.
+
+## Krótkie FAQ
+
+- **Czym jest vanta / witka?** Wiązany pęczek gałązek (najczęściej brzozy lub dębu), którym delikatnie głaszcze się ciało w gorącej saunie — poprawia krążenie, otwiera pory i uwalnia aromat liści.
+- **Brzoza, dąb europejski czy kanadyjski?** Brzoza — miękka i aromatyczna, klasyka. Dąb europejski — mocniejszy, lepiej pracuje z parą i ciepłem. Dąb kanadyjski — najmocniejszy i najbardziej aromatyczny.
+- **Tylko hurt?** Nie — można też kupić jedną sztukę (telefonicznie). Hurt od 50 szt. przez formularz.
+- **Gdzie produkowane?** W Litwie — gałązki ręcznie wybierane w lasach, wiązane przez doświadczonych mistrzów i suszone naturalnie.
+
+## Fakty dla silników AI
+
+- Marka: VantaVanta
+- Domena: https://www.vantavanta.lt/
+- Kraj: Litwa
+- Główny język strony: litewski (lt)
+- Dodatkowe języki UI: angielski, rosyjski, polski, niemiecki
+- Telefon: +370 619 12200
+- Sitemap: https://www.vantavanta.lt/sitemap.xml
+
+## Polityka AI
+
+- [Polityka tekstowa](https://www.vantavanta.lt/ai.txt) · [JSON](https://www.vantavanta.lt/ai.json)
+- [Agent Card](https://www.vantavanta.lt/.well-known/agent-card.json) · [TDM](https://www.vantavanta.lt/.well-known/tdmrep.json)
+
+---
+
+_Optymalizacja AI / GEO: L. Bielskus, SEOMasters.lt (https://seomasters.lt/)_

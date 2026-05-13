@@ -8,9 +8,9 @@ export const translations = {
     },
     hero: {
       title: "Pirties Vantos ",
-      title_underline: "Jūsų Verslui",
+      title_underline: "Visiems",
       subtitle:
-        "Autentiškos beržo, ąžuolo <br className='md:hidden' /> ir kanadinio ąžuolo vantos didmeniniams užsakymams.",
+        "Autentiškos beržo, ąžuolo <br className='md:hidden' /> ir kanadinio ąžuolo vantos — vienetiniai ir didmeniniai užsakymai.",
       button: "MŪSŲ VANTOS",
     },
     story: {
@@ -55,10 +55,10 @@ export const translations = {
       switchTo: "Switch to Lithuanian",
     },
     hero: {
-      title: "Sauna Whisks For ",
-      title_underline: " Your Business",
+      title: "Sauna Whisks ",
+      title_underline: "For Everyone",
       subtitle:
-        "Authentic birch, oak, and Canadian oak sauna whisks for wholesale orders.",
+        "Authentic birch, oak, and Canadian oak sauna whisks — single purchases and wholesale orders.",
       button: "OUR WHISKS",
     },
     story: {
@@ -104,9 +104,9 @@ export const translations = {
     },
     hero: {
       title: "Банные Веники ",
-      title_underline: "Для Вашего Бизнеса",
+      title_underline: "Для Каждого",
       subtitle:
-        "Аутентичные веники из березы, дуба <br className='md:hidden' /> и канадского дуба для оптовых заказов.",
+        "Аутентичные веники из берёзы, дуба <br className='md:hidden' /> и канадского дуба — розница и опт.",
       button: "НАШИ ВЕНИКИ",
     },
     story: {
@@ -152,9 +152,9 @@ export const translations = {
     },
     hero: {
       title: "Witki Do Sauny ",
-      title_underline: "Dla Twojego Biznesu",
+      title_underline: "Dla Każdego",
       subtitle:
-        "Autentyczne witki brzozowe, dębowe <br className='md:hidden' /> i z dębu kanadyjskiego do zamówień hurtowych.",
+        "Autentyczne witki brzozowe, dębowe <br className='md:hidden' /> i z dębu kanadyjskiego — sprzedaż detaliczna i hurtowa.",
       button: "NASZE WITKI",
     },
     story: {
@@ -199,10 +199,10 @@ export const translations = {
       switchTo: "Switch to English",
     },
     hero: {
-      title: "Saunaquasten Für ",
-      title_underline: "Ihr Unternehmen",
+      title: "Saunaquasten ",
+      title_underline: "Für Jeden",
       subtitle:
-        "Authentische Saunaquasten aus Birke, Eiche <br className='md:hidden' /> und kanadischer Eiche für Großbestellungen.",
+        "Authentische Saunaquasten aus Birke, Eiche <br className='md:hidden' /> und kanadischer Eiche — Einzelkauf und Großhandel.",
       button: "UNSERE QUASTEN",
     },
     story: {

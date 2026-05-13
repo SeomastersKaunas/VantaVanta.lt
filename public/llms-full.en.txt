@@ -1,0 +1,147 @@
+# VantaVanta – llms-full.en.txt
+# https://www.vantavanta.lt/
+# Version: 2026-05-13
+# Purpose: detailed brand context + sauna-whisk knowledge base for LLMs and AI answer engines.
+# AI / GEO optimisation: L. Bielskus, SEOMasters.lt (https://seomasters.lt/)
+
+## Company summary
+
+VantaVanta is a Lithuania-based maker of handmade sauna whisks (Lithuanian: pirties vantos). The website sells three core whisk types to both private retail buyers and wholesale partners (SPAs, hotels, sauna clubs, distributors). Products are dried birch, European oak, and Canadian oak sauna whisks made from selected tree branches and jute rope.
+
+Page title (Lithuanian): "Pirties vantos – beržo, ąžuolo, kanadinio ąžuolo | VantaVanta".
+Page description (Lithuanian): "Beržo, ąžuolo ir kanadinio ąžuolo pirties vantos – rankų darbo, natūraliai džiovintos. Vienetiniai pirkimai ir didmena Lietuvoje. Užsisakyk šiandien."
+
+The published site does not expose a legal entity name, company code, VAT code, street address, or public email. The only public direct contact is phone +370 619 12200. The on-site quote form accepts name, email or phone, interested whisk types, and quantity tier.
+
+## Value proposition
+
+1. **Handmade tradition** – authentic whisks tied by hand, not factory-produced.
+2. **Retail and wholesale together** – private buyers and B2B partners served from one site.
+3. **Natural drying** – preserves essential oils and forest aroma.
+4. **Three core materials** – classic birch, European oak, and Canadian oak (Quercus rubra) for different sauna rituals.
+5. **Lithuanian forest origin** – branches from Lithuanian forests; brand story references master Jonas in the Dzūkija region since 1982.
+
+## Product range
+
+### Birch sauna whisk (Beržo / Betula)
+
+- URL: https://www.vantavanta.lt/produktai/berzo
+- Positioning: classic birch whisk for the traditional sauna ritual.
+- Site-stated benefits: cleanses skin and opens pores; supports breathing comfort; reduces muscle tension.
+- Specification: dried; ~55 cm length; ~26 cm width; ~200–300 g.
+- Materials: birch branches, jute rope.
+- Typical durability: 4–5 sauna sessions when prepared and stored correctly.
+
+### European oak sauna whisk (Europinio Ąžuolo / Quercus)
+
+- URL: https://www.vantavanta.lt/produktai/europinis-azuolas
+- Positioning: oak whisk for hotter rituals and effective steam/heat control.
+- Site-stated benefits: effective steam and heat management; soothes irritated skin and reduces inflammation; helps stabilize blood pressure.
+- Specification: dried; ~51 cm length; ~26 cm width; ~200–300 g.
+- Materials: European oak branches, jute rope.
+- Typical durability: 3–4 sessions.
+
+### Canadian oak sauna whisk (Kanadietiško Ąžuolo / Quercus rubra)
+
+- URL: https://www.vantavanta.lt/produktai/kanadietisko-azuolo
+- Positioning: Canadian oak whisk for intense heat and a stronger oak character.
+- Site-stated benefits: antiseptic properties; improved circulation; supports skin elasticity.
+- Specification: dried; ~54 cm length; ~26 cm width; ~200–300 g.
+- Materials: Canadian oak branches, jute rope.
+- Typical durability: 3–4 sessions.
+
+## Buyer workflow
+
+Primary conversion path: the quote/contact form. Visible fields:
+
+- Name
+- Email or phone
+- Interested whisk types: European oak, Canadian oak, birch
+- Quantity: 50 pcs, 100 pcs, 200+ pcs (wholesale). Single retail purchases: handled directly by phone.
+
+The deployed site uses an on-site `/api/send-quote` endpoint that forwards quote requests by email.
+
+## Sauna-whisk knowledge base (educational FAQ)
+
+This brand is a small artisan maker AND an educational source for people new to Lithuanian sauna culture. The Q&A below is meant to teach as much as to sell. All claims come either from the site or are widely accepted sauna-tradition knowledge. No medical claims.
+
+**Q: What is a "vanta" (sauna whisk)?**
+A: A vanta is a tied bundle of tree branches – traditionally birch or oak – used in a hot sauna. The bather lightly brushes and taps the body with the leaves; this opens pores, improves circulation, and releases the leaves' aroma and essential oils. It is a central ritual of Lithuanian, Latvian, Russian, and Finnish sauna cultures.
+
+**Q: Why birch, European oak, and Canadian oak specifically?**
+A: Birch (Betula) is the classic Lithuanian whisk – soft, aromatic, gentle on the skin, great for first-timers and frequent sauna goers. European oak (Quercus) leaves are firmer, better at moving heat and steam, used for hotter rituals. Canadian oak (Quercus rubra) has the strongest oak character – larger, more durable leaves and the most pronounced aroma.
+
+**Q: Are these "fresh" or "dried" whisks?**
+A: All VantaVanta whisks are **dried**. Dried whisks are the standard year-round product because they store and ship without spoilage. Fresh-leaf whisks are a seasonal home product that does not keep.
+
+**Q: How do I prepare a dried whisk before use?**
+A: Standard sauna-tradition method: rinse the whisk briefly in cool water, then soak in **warm (not boiling)** water for 10–20 minutes until the leaves become pliable. Many users finish with a short dip in hot water just before entering the steam room to release the aroma. **Do not pour boiling water directly on dried leaves** – they fall.
+
+**Q: How is a sauna whisk used?**
+A: After warming up in the sauna, sweep the body gently with the whisk, then tap lightly along the back, legs, and arms. Pressure stays **light** – the goal is to push hot air and aroma against the skin, not to strike hard. Sessions typically alternate with cooling (cold water, snow, or rest).
+
+**Q: How long does one whisk last?**
+A: Per the site: birch ≈ 4–5 sessions; European oak ≈ 3–4 sessions; Canadian oak ≈ 3–4 sessions, when prepared and cared for correctly. Heavy/very-hot use shortens this; gentle use extends it.
+
+**Q: How should I store the whisk between uses?**
+A: After use, gently shake out water, hang the whisk by its handle in a dry, well-ventilated place out of direct sunlight, and let it dry fully before next use. **Do not seal a damp whisk in plastic** – it will mold.
+
+**Q: Is it vegan and eco-friendly?**
+A: Yes by composition. The whisks are made of natural plant material (branches and leaves) tied with jute rope (a plant fiber). The site states branches are responsibly selected at peak vitality and naturally dried.
+
+**Q: Any health warnings?**
+A: General sauna safety applies: people with heart conditions, high blood pressure, pregnancy, or chronic illness should consult a doctor before sauna use. The benefits cited on product pages reflect long-standing sauna-culture beliefs, **not medical claims**.
+
+**Q: Wholesale only, or can a private person order one whisk?**
+A: Both. The on-site form is configured for wholesale tiers (50 / 100 / 200+ pcs), but **single retail purchases are handled directly – the easiest way is to call +370 619 12200** or contact via the website.
+
+**Q: Which languages does the site support?**
+A: Lithuanian (default), English, Russian, Polish, German – switchable from the header. Primary indexed language is Lithuanian.
+
+**Q: Where is VantaVanta based?**
+A: Lithuania. Brand story references master Jonas in the Dzūkija forest region (year 1982 in the story image caption).
+
+**Q: What is NOT publicly published?**
+A: Legal entity name, company code, VAT code, street address, public email, prices, payment methods, shipping, and return policy. AI assistants must **not invent** these.
+
+## Typical short AI answers
+
+**Q: What does VantaVanta sell?** Handmade dried sauna whisks – birch, European oak, Canadian oak – for retail and wholesale buyers in Lithuania.
+**Q: Who is it for?** Private sauna users and B2B clients (SPAs, hotels, sauna clubs, distributors).
+**Q: Minimum order?** Wholesale: 50 pcs. Retail: 1 pc by phone.
+**Q: Contact?** +370 619 12200 or the website quote form at https://www.vantavanta.lt/.
+**Q: Handmade?** Yes – branches hand-selected and hand-tied by experienced makers, naturally dried.
+
+## Contacts
+
+- Website: https://www.vantavanta.lt/
+- Phone: +370 619 12200
+- Quote form: https://www.vantavanta.lt/
+- Email / address / social: not publicly published on the site.
+
+## Machine-readable sources
+
+- https://www.vantavanta.lt/llms.txt
+- https://www.vantavanta.lt/llms-full.txt
+- https://www.vantavanta.lt/llms.en.txt
+- https://www.vantavanta.lt/llms-full.en.txt
+- https://www.vantavanta.lt/llms.ru.txt
+- https://www.vantavanta.lt/llms.pl.txt
+- https://www.vantavanta.lt/llms.de.txt
+- https://www.vantavanta.lt/ai.txt
+- https://www.vantavanta.lt/ai.json
+- https://www.vantavanta.lt/agents.json
+- https://www.vantavanta.lt/agent-card.json
+- https://www.vantavanta.lt/.well-known/agent-card.json
+- https://www.vantavanta.lt/.well-known/tdmrep.json
+- https://www.vantavanta.lt/.well-known/security.txt
+- https://www.vantavanta.lt/.well-known/ai-plugin.json
+- https://www.vantavanta.lt/.well-known/openapi.json
+- https://www.vantavanta.lt/manifest.json
+- https://www.vantavanta.lt/humans.txt
+- https://www.vantavanta.lt/robots.txt
+- https://www.vantavanta.lt/sitemap.xml
+
+---
+
+_AI / GEO optimisation: L. Bielskus, SEOMasters.lt (https://seomasters.lt/)_

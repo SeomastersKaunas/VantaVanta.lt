@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useLanguage, useTranslations } from "@/contexts/LanguageContext";
-import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import { Menu, X, Globe, ChevronDown, Phone } from "lucide-react";
 import Image from "next/image";
 import QuoteModal from "./QuoteModal";
 
@@ -85,7 +85,18 @@ export default function Header() {
               ))}
             </nav>
 
-            <div className="flex items-center">
+            <div className="flex items-center gap-2 md:gap-4">
+              <a
+                href="tel:+37061912200"
+                aria-label="Skambinti +370 619 12200"
+                className="flex items-center gap-1.5 md:gap-2 px-1.5 md:px-3 py-1.5 rounded-[5px] hover:bg-gray-100 transition-colors text-black whitespace-nowrap"
+              >
+                <Phone className="h-4 w-4 md:h-5 md:w-5 shrink-0" />
+                <span className="text-[13px] md:text-[15px] font-medium tracking-[0.3px] md:tracking-[0.5px]">
+                  +370 619 12200
+                </span>
+              </a>
+
               <div
                 className="hidden md:flex items-center space-x-2 relative"
                 ref={langDropdownRef}

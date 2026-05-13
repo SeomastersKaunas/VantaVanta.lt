@@ -12,6 +12,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/products/:slug",
+        destination: "/produktai/:slug",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

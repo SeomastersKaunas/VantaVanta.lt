@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "VantaVanta",
+  "name_for_model": "vantavanta",
+  "description_for_human": "Lietuviškos rankų darbo pirties vantos (beržo, europinio ąžuolo, kanadinio ąžuolo) – vienetiniai pirkimai ir didmena.",
+  "description_for_model": "Pateikia VantaVanta pirties vantų produktų informaciją, mokomuosius klausimus-atsakymus apie vantas, vienetinių ir didmenos pirkimų eigą, užklausos teikimo nurodymus ir paskelbtus kontaktus. Neišgalvoti kainų, juridinio pavadinimo, el. pašto ar adreso.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://www.vantavanta.lt/.well-known/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://www.vantavanta.lt/logo.jpg",
+  "contact_email": "",
+  "legal_info_url": "https://www.vantavanta.lt/"
+}

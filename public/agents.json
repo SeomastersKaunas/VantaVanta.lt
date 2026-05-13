@@ -1,0 +1,30 @@
+{
+  "version": "1.1",
+  "agents": [
+    {
+      "name": "VantaVanta Pirties Vantų Agentas",
+      "description": "Atstovauja VantaVanta. Atsako į produktų, pirties vantų žinių, vienetinių/didmenos užsakymų, užklausų ir kontaktų klausimus apie lietuviškas rankų darbo pirties vantas.",
+      "url": "https://www.vantavanta.lt/",
+      "capabilities": [
+        "product.lookup",
+        "product.compare",
+        "sauna.whisk.knowledge",
+        "retail.and.wholesale.info",
+        "quote.request.guidance",
+        "contact.info"
+      ],
+      "languages": ["lt", "en", "ru", "pl", "de"],
+      "primaryLanguage": "lt",
+      "contact": "https://www.vantavanta.lt/",
+      "phone": "+370 619 12200",
+      "card": "https://www.vantavanta.lt/.well-known/agent-card.json",
+      "cardRoot": "https://www.vantavanta.lt/agent-card.json"
+    }
+  ],
+  "lastUpdated": "2026-05-13",
+  "ai_optimisation": {
+    "author": "L. Bielskus",
+    "agency": "SEOMasters.lt",
+    "site": "https://seomasters.lt/"
+  }
+}

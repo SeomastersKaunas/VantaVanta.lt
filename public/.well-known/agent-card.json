@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.1.0",
+  "name": "VantaVanta Pirties Vantų Agentas",
+  "description": "Pokalbio agentas, atstovaujantis VantaVanta – lietuviškoms rankų darbo pirties vantoms (beržo, europinio ąžuolo, kanadinio ąžuolo). Aptarnauja tiek vienetinius pirkėjus, tiek didmenos klientus.",
+  "url": "https://www.vantavanta.lt/",
+  "version": "1.1.0",
+  "provider": {
+    "organization": "VantaVanta",
+    "url": "https://www.vantavanta.lt/"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "skills": [
+    {
+      "id": "product-lookup",
+      "name": "Produktų paieška",
+      "description": "Suranda VantaVanta pirties vantas pagal pavadinimą ir pateikia URL, medžiagą, apytikslį dydį bei aprašymą iš svetainės.",
+      "inputModes": ["text"],
+      "outputModes": ["text"]
+    },
+    {
+      "id": "product-comparison",
+      "name": "Produktų palyginimas",
+      "description": "Palygina beržo, europinio ąžuolo ir kanadinio ąžuolo vantas naudojant tik svetainėje paskelbtus duomenis.",
+      "inputModes": ["text"],
+      "outputModes": ["text"]
+    },
+    {
+      "id": "sauna-whisk-knowledge",
+      "name": "Pirties vantų žinios",
+      "description": "Atsako į bendro pobūdžio mokomuosius klausimus apie lietuviškas pirties vantas (paruošimas, naudojimas, laikymas, trukmė) remiantis llms-full.txt. Medicininių patarimų nepateikia.",
+      "inputModes": ["text"],
+      "outputModes": ["text"]
+    },
+    {
+      "id": "retail-and-wholesale-guidance",
+      "name": "Vienetiniai ir didmenos užsakymai",
+      "description": "Paaiškina, kad VantaVanta aptarnauja tiek privačius pirkėjus (vienetiniai pirkimai telefonu), tiek didmenos klientus (50, 100, 200+ vnt. pakopos per užklausos formą).",
+      "inputModes": ["text"],
+      "outputModes": ["text"]
+    },
+    {
+      "id": "quote-request",
+      "name": "Užklausos teikimo pagalba",
+      "description": "Padeda pirkėjui pateikti vardą, kontaktus, dominančius vantų tipus ir kiekį užklausos formoje.",
+      "inputModes": ["text"],
+      "outputModes": ["text"]
+    },
+    {
+      "id": "contact-info",
+      "name": "Kontaktinė informacija",
+      "description": "Pateikia paskelbtą VantaVanta svetainę ir telefoną. Neišgalvoja el. pašto, adreso, įmonės kodo ar kainų.",
+      "inputModes": ["text"],
+      "outputModes": ["text"]
+    }
+  ],
+  "supportedLanguages": ["lt", "en", "ru", "pl", "de"],
+  "primaryLanguage": "lt",
+  "defaultInputModes": ["text"],
+  "defaultOutputModes": ["text"],
+  "lastUpdated": "2026-05-13",
+  "ai_optimisation": {
+    "author": "L. Bielskus",
+    "agency": "SEOMasters.lt",
+    "site": "https://seomasters.lt/"
+  }
+}

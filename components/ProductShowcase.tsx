@@ -14,7 +14,7 @@ const ProductCard = ({ product }: { product: any }) => {
 
   return (
     <Link
-      href={`/products/${slug}`}
+      href={`/produktai/${slug}`}
       className="group flex flex-col items-center text-center"
     >
       <div className="relative h-[300px] md:h-[210px] aspect-square! w-full bg-[#F2F2F2] p-4 flex items-center justify-center group transition-colors group-hover:bg-neutral-200">

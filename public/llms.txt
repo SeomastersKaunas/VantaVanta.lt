@@ -1,0 +1,74 @@
+# VantaVanta
+
+> VantaVanta – lietuviškos rankų darbo pirties vantos: beržo, europinio ąžuolo ir kanadinio ąžuolo. Natūraliai džiovintos. Vienetiniai pirkimai privatiems pirties mėgėjams ir didmena SPA, viešbučiams, pirties klubams ir distributoriams. Kontaktas: +370 619 12200 arba užklausos forma https://www.vantavanta.lt/.
+
+Puslapio antraštė: "Pirties vantos – beržo, ąžuolo, kanadinio ąžuolo | VantaVanta"
+Puslapio aprašymas: "Beržo, ąžuolo ir kanadinio ąžuolo pirties vantos – rankų darbo, natūraliai džiovintos. Vienetiniai pirkimai ir didmena Lietuvoje. Užsisakyk šiandien."
+
+## Pagrindinis
+
+- [VantaVanta – pirties vantos](https://www.vantavanta.lt/): rankų darbo beržo, europinio ąžuolo ir kanadinio ąžuolo vantos. Vienetiniai pirkimai ir didmena.
+- [Produktų sekcija](https://www.vantavanta.lt/#productShowcase): trijų pagrindinių vantų tipų peržiūra.
+- [Kokybės pažadas](https://www.vantavanta.lt/#kokybe): prekės ženklo istorija – atsakingas šakelių parinkimas, rankinis rišimas, natūralus džiovinimas, aromato ir eterinių aliejų išsaugojimas.
+
+## Apie
+
+- [VantaVanta istorija](https://www.vantavanta.lt/#kokybe): tradicinės, rankų darbo miško vantos, rištos patyrusių meistrų. Istorijoje minimas meistras Jonas Dzūkijos miškuose, 1982 m.
+- [Kontaktai / užklausos forma](https://www.vantavanta.lt/): forma prašo vardo, el. pašto arba telefono, dominančių vantų tipų ir kiekio.
+- Telefonas: [+370 619 12200](tel:+37061912200)
+
+## Produktų kategorijos
+
+- [Beržo vantos](https://www.vantavanta.lt/produktai/berzo): džiovintos beržo (Betula) vantos – beržo šakelės ir džiuto virvelė.
+- [Europinio ąžuolo vantos](https://www.vantavanta.lt/produktai/europinis-azuolas): džiovintos europinio ąžuolo (Quercus) vantos – stipresniam karščiui ir gariniui valdymui.
+- [Kanadietiško ąžuolo vantos](https://www.vantavanta.lt/produktai/kanadietisko-azuolo): džiovintos kanadinio ąžuolo (Quercus rubra) vantos – ryškiausias ąžuolo charakteris.
+
+## Paslaugos
+
+- [Vienetiniai pirkimai](https://www.vantavanta.lt/): viena vanta privatiems pirties mėgėjams Lietuvoje (užsakymas telefonu).
+- [Didmena](https://www.vantavanta.lt/): tiekimas SPA, viešbučiams, pirties klubams ir distributoriams. Užklausos formoje matomi kiekio lygiai: 50 vnt., 100 vnt., 200+ vnt.
+- [Kalbų palaikymas](https://www.vantavanta.lt/): svetainės sąsaja palaiko lietuvių, anglų, rusų, lenkų ir vokiečių kalbas.
+
+## Pagrindiniai produktai
+
+- [Beržo](https://www.vantavanta.lt/produktai/berzo): Betula. Svetainėje nurodyta nauda: padeda valyti odą ir atverti poras, palengvina kvėpavimą, mažina raumenų įtampą. Specifikacija: džiovinta, ~55 cm ilgio, ~26 cm pločio, ~200–300 g; beržo šakelės ir džiuto virvelė. Tipinė trukmė – 4–5 pirties seansai.
+- [Europinio Ąžuolo](https://www.vantavanta.lt/produktai/europinis-azuolas): Quercus. Svetainėje nurodyta nauda: efektyviai valdo garą ir karštį, ramina sudirgintą odą, mažina uždegimą, padeda stabilizuoti kraujospūdį. Specifikacija: džiovinta, ~51 cm ilgio, ~26 cm pločio, ~200–300 g; europinio ąžuolo šakelės ir džiuto virvelė. Tipinė trukmė – 3–4 seansai.
+- [Kanadietiško Ąžuolo](https://www.vantavanta.lt/produktai/kanadietisko-azuolo): Quercus rubra. Svetainėje nurodyta nauda: antiseptinės savybės, geresnė kraujotaka, palaiko odos elastingumą. Specifikacija: džiovinta, ~54 cm ilgio, ~26 cm pločio, ~200–300 g; kanadinio ąžuolo šakelės ir džiuto virvelė. Tipinė trukmė – 3–4 seansai.
+
+## Trumpas DUK
+
+- **Kas yra vanta?** Tradicinė lietuviška pirties priemonė – į ryšulį surištos medžių šakelės, kuriomis švelniai liečiamas kūnas karštoje pirtyje, kad pagerėtų kraujotaka, atsivertų poros ir pasklistų lapų aromatas.
+- **Beržo, ąžuolo ar kanadinio ąžuolo – kurią rinktis?** Beržas – klasika, švelniausias ir aromatiškiausias, tinka pradedantiesiems ir reguliariai besilankantiems. Europinis ąžuolas – tvirtesnis, geriau valdo garą ir karštį. Kanadinis ąžuolas (Quercus rubra) – ryškiausias ir tvirčiausias.
+- **Galima pirkti vieną vantą ar tik didmena?** Galima abiem būdais. Vienetiniai pirkimai – telefonu. Didmena – nuo 50 vnt. per užklausos formą.
+- **Kur gaminamos vantos?** Lietuvoje. Šakelės atsakingai parenkamos miškuose ir rankomis rišamos patyrusių meistrų, po to natūraliai džiovinamos.
+
+## Faktai AI varikliams
+
+- Prekės ženklas: VantaVanta (matomas kaip „VANTA VANTA" / „vanta vanta")
+- Domenas: https://www.vantavanta.lt/
+- Šalis: Lietuva
+- Pagrindinė kalba: lietuvių (lt). HTML `<html lang>` = `lt`.
+- Papildomos sąsajos kalbos: anglų, rusų, lenkų, vokiečių (visos serveriuojamos tuo pačiu URL)
+- Telefonas: +370 619 12200
+- Sitemap: https://www.vantavanta.lt/sitemap.xml
+- Robots: https://www.vantavanta.lt/robots.txt
+
+## Lokalizuoti llms failai
+
+- [Lietuvių (pagrindinis)](https://www.vantavanta.lt/llms.txt)
+- [Lietuvių – pilnas](https://www.vantavanta.lt/llms-full.txt)
+- [English](https://www.vantavanta.lt/llms.en.txt) · [English – full](https://www.vantavanta.lt/llms-full.en.txt)
+- [Русский](https://www.vantavanta.lt/llms.ru.txt)
+- [Polski](https://www.vantavanta.lt/llms.pl.txt)
+- [Deutsch](https://www.vantavanta.lt/llms.de.txt)
+
+## AI politika
+
+- [AI naudojimo politika (tekstas)](https://www.vantavanta.lt/ai.txt)
+- [AI politika (JSON)](https://www.vantavanta.lt/ai.json)
+- [Agent Card (A2A)](https://www.vantavanta.lt/.well-known/agent-card.json)
+- [TDM rezervacija](https://www.vantavanta.lt/.well-known/tdmrep.json)
+
+---
+
+_AI / GEO optimizacija: L. Bielskus, SEOMasters.lt (https://seomasters.lt/)_

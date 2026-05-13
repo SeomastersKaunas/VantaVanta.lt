@@ -1,0 +1,62 @@
+# VantaVanta
+
+> VantaVanta — litauischer Hersteller handgefertigter, getrockneter Saunaquasten (lit.: pirties vantos): aus Birke, europäischer Eiche und kanadischer Eiche. Einzelverkauf für private Saunanutzer und Großhandel für Spas, Hotels, Saunaclubs und Distributoren. Kontakt: +370 619 12200 oder Anfrageformular auf https://www.vantavanta.lt/.
+
+Seitentitel (auf Litauisch): "Pirties vantos – beržo, ąžuolo, kanadinio ąžuolo | VantaVanta"
+Seitenbeschreibung (auf Litauisch): "Beržo, ąžuolo ir kanadinio ąžuolo pirties vantos – rankų darbo, natūraliai džiovintos. Vienetiniai pirkimai ir didmena Lietuvoje. Užsisakyk šiandien."
+
+## Hauptseite
+
+- [VantaVanta — Saunaquasten](https://www.vantavanta.lt/): Startseite. Handgefertigte Quasten aus Birke, europäischer Eiche und kanadischer Eiche. Einzelverkauf und Großhandel.
+- [Produktbereich](https://www.vantavanta.lt/#productShowcase): drei Hauptarten von Saunaquasten.
+- [Qualitätsversprechen](https://www.vantavanta.lt/#kokybe): Markengeschichte — verantwortungsvolle Auswahl der Zweige, Handbindung, natürliche Trocknung.
+
+## Über die Marke
+
+- [Geschichte](https://www.vantavanta.lt/#kokybe): traditionelle Saunaquasten, gebunden von erfahrenen Meistern. Meister Jonas in den Wäldern von Dzūkija, seit 1982.
+- [Kontakt / Anfrageformular](https://www.vantavanta.lt/): Name, E-Mail oder Telefon, gewünschte Quastenart, Menge.
+- Telefon: [+370 619 12200](tel:+37061912200)
+
+## Kategorien
+
+- [Birke — Beržo](https://www.vantavanta.lt/produktai/berzo): getrocknete Birkenquasten (Betula) — Birkenzweige und Juteseil.
+- [Europäische Eiche — Europinio Ąžuolo](https://www.vantavanta.lt/produktai/europinis-azuolas): getrocknete Eichenquasten (Quercus) für intensiveren Dampf und Hitzekontrolle.
+- [Kanadische Eiche — Kanadietiško Ąžuolo](https://www.vantavanta.lt/produktai/kanadietisko-azuolo): getrocknete Quercus-rubra-Quasten mit dem ausgeprägtesten Eichencharakter.
+
+## Leistungen
+
+- **Einzelverkauf**: einzelne Saunaquaste für private Saunanutzer in Litauen (Bestellung per Telefon).
+- **Großhandel**: Belieferung von Spas, Hotels, Saunaclubs und Distributoren. Mengenstufen im Formular: 50 St., 100 St., 200+ St.
+- **UI-Sprachen**: Litauisch, Englisch, Russisch, Polnisch, Deutsch.
+
+## Produkte
+
+- [Beržo (Birke)](https://www.vantavanta.lt/produktai/berzo): Betula. Auf der Seite genannter Nutzen: reinigt die Haut und öffnet die Poren; unterstützt die Atmung; lindert Muskelverspannungen. Getrocknet; ~55 × ~26 cm; ~200–300 g. Reicht für 4–5 Saunagänge.
+- [Europinio Ąžuolo (Europäische Eiche)](https://www.vantavanta.lt/produktai/europinis-azuolas): Quercus. Auf der Seite genannter Nutzen: effektive Steuerung von Dampf und Hitze; beruhigt gereizte Haut und lindert Entzündungen; hilft, den Blutdruck zu stabilisieren. Getrocknet; ~51 × ~26 cm; ~200–300 g. 3–4 Saunagänge.
+- [Kanadietiško Ąžuolo (Kanadische Eiche)](https://www.vantavanta.lt/produktai/kanadietisko-azuolo): Quercus rubra. Auf der Seite genannter Nutzen: antiseptische Eigenschaften; verbesserte Durchblutung; unterstützt die Hautelastizität. Getrocknet; ~54 × ~26 cm; ~200–300 g. 3–4 Saunagänge.
+
+## Kurz-FAQ
+
+- **Was ist eine vanta / Saunaquaste?** Ein gebundenes Bündel aus Zweigen (meist Birke oder Eiche), mit dem in der heißen Sauna sanft auf den Körper geklopft wird — fördert die Durchblutung, öffnet die Poren und setzt den Blattduft frei.
+- **Birke, europäische oder kanadische Eiche?** Birke — weich und aromatisch, der Klassiker. Europäische Eiche — fester, besser für Dampf und Hitze. Kanadische Eiche — am stärksten und intensivsten.
+- **Nur Großhandel?** Nein — auch Einzelstücke (per Telefon). Großhandel ab 50 St. über das Formular.
+- **Wo wird produziert?** In Litauen — Zweige werden in den Wäldern von Hand ausgewählt, von erfahrenen Meistern gebunden und natürlich getrocknet.
+
+## Fakten für KI-Engines
+
+- Marke: VantaVanta
+- Domain: https://www.vantavanta.lt/
+- Land: Litauen
+- Primäre Seitensprache: Litauisch (lt)
+- Zusätzliche UI-Sprachen: Englisch, Russisch, Polnisch, Deutsch
+- Telefon: +370 619 12200
+- Sitemap: https://www.vantavanta.lt/sitemap.xml
+
+## KI-Richtlinie
+
+- [Text-Richtlinie](https://www.vantavanta.lt/ai.txt) · [JSON](https://www.vantavanta.lt/ai.json)
+- [Agent Card](https://www.vantavanta.lt/.well-known/agent-card.json) · [TDM](https://www.vantavanta.lt/.well-known/tdmrep.json)
+
+---
+
+_KI / GEO-Optimierung: L. Bielskus, SEOMasters.lt (https://seomasters.lt/)_

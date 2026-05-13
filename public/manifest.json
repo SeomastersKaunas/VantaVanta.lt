@@ -1,0 +1,32 @@
+{
+  "name": "VantaVanta",
+  "short_name": "VantaVanta",
+  "description": "Pirties vantos – beržo, ąžuolo ir kanadinio ąžuolo. Rankų darbo, natūraliai džiovintos. Vienetiniai pirkimai ir didmena Lietuvoje.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0F543F",
+  "lang": "lt",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

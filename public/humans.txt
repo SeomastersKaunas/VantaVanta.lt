@@ -1,0 +1,41 @@
+# Site owner / Svetainės savininkas
+VantaVanta
+Vieta / Location: Lietuva (Lithuania)
+Kontaktas / Contact: https://www.vantavanta.lt/  ·  +370 619 12200
+
+# Pagrindinė kalba / Primary language
+Lietuvių (lt). Papildomos UI kalbos: anglų, rusų, lenkų, vokiečių.
+
+---
+
+## LT
+VantaVanta – lietuviškos rankų darbo pirties vantos. Beržas, europinis ąžuolas
+ir kanadinis ąžuolas. Vienetiniai pirkimai ir didmena.
+
+## EN
+VantaVanta – Lithuanian handmade sauna whisks. Birch, European oak,
+and Canadian oak. Retail and wholesale.
+
+## RU
+VantaVanta – литовские банные веники ручной работы. Берёза, европейский дуб
+и канадский дуб. Розница и опт.
+
+## PL
+VantaVanta – litewskie ręcznie wyrabiane witki do sauny. Brzoza, dąb europejski
+i dąb kanadyjski. Detal i hurt.
+
+## DE
+VantaVanta – litauische handgefertigte Saunaquasten. Birke, europäische Eiche
+und kanadische Eiche. Einzelverkauf und Großhandel.
+
+---
+
+# AI / GEO optimizacija
+Author: L. Bielskus
+Agency: SEOMasters.lt  (https://seomasters.lt/)
+
+# Site
+Last update: 2026-05-13
+Standards: HTML5, JSON-LD (schema.org), llmstxt.org, A2A agent-card 1.1.0,
+RFC 9116 security.txt, W3C TDM Reservation Protocol.
+Stack: Next.js (App Router) + Sanity CMS, deployed on Vercel.

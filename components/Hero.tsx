@@ -35,7 +35,17 @@ const Hero = () => {
             className="mt-4 text-[15px] md:text-[18px] md:relative absolute bottom-[12px] md:bottom-auto md:right-auto pr-[12px] md:pr-0 leading-[12px] md:leading-[25px] font-light tracking-[-0.7px] text-white"
           ></p>
 
-          <button className="mt-8 bg-white px-8 py-3 h-[50px] text-center text-[11px] leading-1 font-medium tracking-[2px] hidden md:flex items-center justify-center  text-black transition-colors hover:bg-gray-200  rounded-[3px] cursor-pointer uppercase">
+          <button
+            type="button"
+            onClick={() => {
+              if (typeof document !== "undefined") {
+                document
+                  .getElementById("productShowcase")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }}
+            className="mt-8 bg-white px-8 py-3 h-[50px] text-center text-[11px] leading-1 font-medium tracking-[2px] flex items-center justify-center text-black transition-colors hover:bg-gray-200 rounded-[3px] cursor-pointer uppercase"
+          >
             {t("hero.button")}
           </button>
         </div>

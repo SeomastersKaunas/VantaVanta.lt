@@ -1,0 +1,111 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "VantaVanta AI/GEO Context API",
+    "version": "1.0.0",
+    "description": "Static AI/GEO discovery document for VantaVanta. This describes public context files and product pages; it does not expose ordering automation."
+  },
+  "servers": [
+    {
+      "url": "https://www.vantavanta.lt"
+    }
+  ],
+  "paths": {
+    "/llms.txt": {
+      "get": {
+        "operationId": "getLlmsContext",
+        "summary": "Get concise VantaVanta AI context",
+        "responses": {
+          "200": {
+            "description": "Markdown/text context for AI systems",
+            "content": {
+              "text/markdown": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms-full.txt": {
+      "get": {
+        "operationId": "getFullLlmsContext",
+        "summary": "Get detailed VantaVanta AI context",
+        "responses": {
+          "200": {
+            "description": "Detailed markdown/text context for AI systems",
+            "content": {
+              "text/markdown": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ai.json": {
+      "get": {
+        "operationId": "getAiPolicy",
+        "summary": "Get machine-readable AI policy",
+        "responses": {
+          "200": {
+            "description": "AI usage policy",
+            "content": {
+              "application/json": {
+                "schema": { "type": "object" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/produktai/berzo": {
+      "get": {
+        "operationId": "getBirchWhiskPage",
+        "summary": "Get the birch sauna whisk product page",
+        "responses": {
+          "200": {
+            "description": "HTML product page",
+            "content": {
+              "text/html": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/produktai/europinis-azuolas": {
+      "get": {
+        "operationId": "getEuropeanOakWhiskPage",
+        "summary": "Get the European oak sauna whisk product page",
+        "responses": {
+          "200": {
+            "description": "HTML product page",
+            "content": {
+              "text/html": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/produktai/kanadietisko-azuolo": {
+      "get": {
+        "operationId": "getCanadianOakWhiskPage",
+        "summary": "Get the Canadian oak sauna whisk product page",
+        "responses": {
+          "200": {
+            "description": "HTML product page",
+            "content": {
+              "text/html": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

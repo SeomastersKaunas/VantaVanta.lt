@@ -1,0 +1,74 @@
+# VantaVanta
+
+> VantaVanta – Lithuanian maker of handmade dried sauna whisks (Lithuanian: pirties vantos): birch, European oak, and Canadian oak. Single retail purchases for private sauna users and wholesale supply for SPAs, hotels, sauna clubs, and distributors. Contact: +370 619 12200 or the on-site quote form at https://www.vantavanta.lt/.
+
+Page title (Lithuanian): "Pirties vantos – beržo, ąžuolo, kanadinio ąžuolo | VantaVanta"
+Page description (Lithuanian): "Beržo, ąžuolo ir kanadinio ąžuolo pirties vantos – rankų darbo, natūraliai džiovintos. Vienetiniai pirkimai ir didmena Lietuvoje. Užsisakyk šiandien."
+
+## Main
+
+- [VantaVanta – sauna whisks](https://www.vantavanta.lt/): Homepage. Handmade birch, European oak, and Canadian oak sauna whisks. Retail and wholesale.
+- [Product showcase](https://www.vantavanta.lt/#productShowcase): Hub for the three published whisk types.
+- [Quality promise](https://www.vantavanta.lt/#kokybe): Brand story – responsible branch selection, hand tying, natural drying, preservation of aroma and essential oils.
+
+## About
+
+- [Brand story](https://www.vantavanta.lt/#kokybe): Traditional handmade forest products tied by experienced makers. References master Jonas in the Dzūkija forests, 1982.
+- [Contact / quote form](https://www.vantavanta.lt/): The form requests name, email or phone, interested whisk types, and quantity tier.
+- Phone: [+370 619 12200](tel:+37061912200)
+
+## Categories
+
+- [Birch sauna whisks – Beržo](https://www.vantavanta.lt/produktai/berzo): Dried Betula whisks – birch branches and jute rope.
+- [European oak sauna whisks – Europinio Ąžuolo](https://www.vantavanta.lt/produktai/europinis-azuolas): Dried Quercus whisks for stronger heat and steam control.
+- [Canadian oak sauna whisks – Kanadietiško Ąžuolo](https://www.vantavanta.lt/produktai/kanadietisko-azuolo): Dried Quercus rubra whisks – the most pronounced oak character.
+
+## Services
+
+- [Retail purchases](https://www.vantavanta.lt/): Single sauna whisks for private sauna users in Lithuania (handled by phone).
+- [Wholesale](https://www.vantavanta.lt/): Supply for SPAs, hotels, sauna clubs, and distributors. Quote-form quantity tiers: 50 pcs, 100 pcs, 200+ pcs.
+- [Multilingual UI](https://www.vantavanta.lt/): Lithuanian, English, Russian, Polish, German.
+
+## Featured products
+
+- [Beržo](https://www.vantavanta.lt/produktai/berzo): Betula. Site-stated benefits: cleanses skin and opens pores; supports breathing comfort; reduces muscle tension. Specification: dried, ~55 cm × ~26 cm, ~200–300 g; birch branches and jute rope. Typical durability: 4–5 sauna sessions.
+- [Europinio Ąžuolo](https://www.vantavanta.lt/produktai/europinis-azuolas): Quercus. Site-stated benefits: effective steam and heat control; soothes irritated skin and reduces inflammation; helps stabilize blood pressure. Specification: dried, ~51 cm × ~26 cm, ~200–300 g; European oak branches and jute rope. Typical durability: 3–4 sessions.
+- [Kanadietiško Ąžuolo](https://www.vantavanta.lt/produktai/kanadietisko-azuolo): Quercus rubra. Site-stated benefits: antiseptic properties; improved circulation; supports skin elasticity. Specification: dried, ~54 cm × ~26 cm, ~200–300 g; Canadian oak branches and jute rope. Typical durability: 3–4 sessions.
+
+## Quick FAQ
+
+- **What is a "vanta"?** A traditional Lithuanian sauna whisk – a tied bundle of tree branches used to gently brush and tap the body in a hot sauna to improve circulation, open pores, and release leaf aroma.
+- **Birch, European oak, or Canadian oak – which to pick?** Birch: classic, soft, aromatic, ideal for first-timers and frequent users. European oak: firmer, better at moving steam and heat. Canadian oak (Quercus rubra): the strongest character.
+- **Single piece or wholesale only?** Both. Single retail by phone; wholesale tiers from 50 pcs via the on-site form.
+- **Where are they made?** Lithuania – branches selected from forests, hand-tied by experienced makers, naturally dried.
+
+## Facts for AI engines
+
+- Brand: VantaVanta (also styled "VANTA VANTA" / "vanta vanta")
+- Domain: https://www.vantavanta.lt/
+- Country: Lithuania
+- Primary language: Lithuanian (lt). HTML `<html lang>` = `lt`.
+- Additional UI languages: English, Russian, Polish, German (all served from the same URL)
+- Phone: +370 619 12200
+- Sitemap: https://www.vantavanta.lt/sitemap.xml
+- Robots: https://www.vantavanta.lt/robots.txt
+
+## Localized llms files
+
+- [Lietuvių (primary)](https://www.vantavanta.lt/llms.txt)
+- [Lietuvių – full](https://www.vantavanta.lt/llms-full.txt)
+- [English](https://www.vantavanta.lt/llms.en.txt) · [English – full](https://www.vantavanta.lt/llms-full.en.txt)
+- [Русский](https://www.vantavanta.lt/llms.ru.txt)
+- [Polski](https://www.vantavanta.lt/llms.pl.txt)
+- [Deutsch](https://www.vantavanta.lt/llms.de.txt)
+
+## AI policy
+
+- [AI usage policy (text)](https://www.vantavanta.lt/ai.txt)
+- [AI policy (JSON)](https://www.vantavanta.lt/ai.json)
+- [Agent Card (A2A)](https://www.vantavanta.lt/.well-known/agent-card.json)
+- [TDM Reservation](https://www.vantavanta.lt/.well-known/tdmrep.json)
+
+---
+
+_AI / GEO optimisation: L. Bielskus, SEOMasters.lt (https://seomasters.lt/)_
