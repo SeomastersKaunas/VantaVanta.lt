@@ -45,6 +45,8 @@ export const translations = {
       quantity_option_100: "100 vnt.",
       quantity_option_200: "200+ vnt.",
       submit_button: "Gauti pasiūlymą",
+      or: "Arba",
+      call_button: "Skambinkite: +370 619 12200",
     },
   },
   en: {
@@ -93,6 +95,8 @@ export const translations = {
       quantity_option_100: "100 units",
       quantity_option_200: "200+ units",
       submit_button: "Get an Offer",
+      or: "Or",
+      call_button: "Call: +370 619 12200",
     },
   },
   ru: {
@@ -141,6 +145,8 @@ export const translations = {
       quantity_option_100: "100 шт.",
       quantity_option_200: "200+ шт.",
       submit_button: "Получить предложение",
+      or: "Или",
+      call_button: "Позвоните: +370 619 12200",
     },
   },
   pl: {
@@ -189,6 +195,8 @@ export const translations = {
       quantity_option_100: "100 szt.",
       quantity_option_200: "200+ szt.",
       submit_button: "Otrzymaj ofertę",
+      or: "Lub",
+      call_button: "Zadzwoń: +370 619 12200",
     },
   },
   de: {
@@ -237,6 +245,8 @@ export const translations = {
       quantity_option_100: "100 Stk.",
       quantity_option_200: "200+ Stk.",
       submit_button: "Angebot anfordern",
+      or: "Oder",
+      call_button: "Anrufen: +370 619 12200",
     },
   },
 };

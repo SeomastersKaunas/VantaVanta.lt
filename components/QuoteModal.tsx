@@ -99,6 +99,25 @@ const QuoteModal = ({
       if (response.ok) {
         setSubmitStatus("success");
 
+        const selectedWhisks = Object.entries(formData.whisks)
+          .filter(([, selected]) => selected)
+          .map(([whisk]) => whisk)
+          .join(",");
+
+        const gtag = (window as Window & {
+          gtag?: (
+            command: "event",
+            eventName: string,
+            parameters?: Record<string, string>
+          ) => void;
+        }).gtag;
+
+        gtag?.("event", "quote_request_submit", {
+          event_category: "lead",
+          event_label: selectedWhisks || "unspecified",
+          quantity: formData.quantity,
+        });
+
         setFormData({
           name: "",
           contact: "",
@@ -294,6 +313,21 @@ const QuoteModal = ({
                 />
               )}
             </button>
+
+            <div className="flex items-center gap-4 text-gray-500">
+              <div className="h-px flex-1 bg-gray-200" />
+              <span className="text-sm font-medium md:text-base">
+                {t("quote_form.or")}
+              </span>
+              <div className="h-px flex-1 bg-gray-200" />
+            </div>
+
+            <Link
+              href="tel:+37061912200"
+              className="flex w-full items-center justify-center rounded-lg border-2 border-[#0F543F] bg-white px-6 py-3 text-center text-lg font-medium text-[#0F543F] transition-colors hover:bg-[#0F543F] hover:text-white md:rounded-md md:px-8 md:py-4 md:text-[26px] md:-tracking-[1.2px]"
+            >
+              {t("quote_form.call_button")}
+            </Link>
 
             {submitStatus === "error" && (
               <p className="text-red-500 text-center mt-2">

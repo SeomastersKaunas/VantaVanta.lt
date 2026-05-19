@@ -125,5 +125,44 @@ export default async function ProductPage({
     notFound();
   }
 
-  return <ProductDetails product={product} />;
+  const title: string = product.title?.lt || "Vanta";
+  const ltSlug: string = product.slug?.lt?.current || slug;
+  const description =
+    portableTextToPlain(product.cardContent?.lt) ||
+    `${title} – rankų darbo pirties vanta, natūraliai džiovinta.`;
+
+  let image: string | undefined;
+  try {
+    if (product.mainImage) {
+      image = urlFor(product.mainImage)?.width(1000).height(1000).url();
+    }
+  } catch {
+    image = undefined;
+  }
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${SITE_URL}/produktai/${ltSlug}#product`,
+    name: title,
+    description,
+    image,
+    brand: {
+      "@type": "Brand",
+      name: "VantaVanta",
+    },
+    category: "Pirties vantos",
+    url: `${SITE_URL}/produktai/${ltSlug}`,
+    material: "Medžių šakelės ir džiuto virvelė",
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <ProductDetails product={product} />
+    </>
+  );
 }
