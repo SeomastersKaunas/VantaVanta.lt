@@ -156,21 +156,22 @@ const QuoteModal = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/60 p-3 sm:items-center sm:p-4 animate-fade-in"
+      className="fixed inset-0 z-50 overflow-y-auto overflow-x-hidden overscroll-contain bg-black/60 p-4 animate-fade-in"
       onClick={onClose}
     >
-      <div
-        ref={modalRef}
-        className="relative my-auto w-full max-w-lg max-h-[95vh] overflow-y-auto rounded-2xl bg-white p-5 py-7 shadow-xl md:max-w-[716px] md:rounded-[32px] md:p-10 md:py-10"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <button
-          onClick={onClose}
-          className="absolute top-3 right-3 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white text-gray-600 shadow-lg transition-transform hover:scale-110 md:-top-5 md:-right-5 md:h-14 md:w-14"
-          aria-label="Close form"
+      <div className="flex min-h-full items-center justify-center py-6 md:py-10">
+        <div
+          ref={modalRef}
+          className="relative w-full max-w-lg rounded-2xl bg-white p-6 py-8 shadow-xl md:max-w-[716px] md:rounded-[32px] md:p-12 md:py-12"
+          onClick={(e) => e.stopPropagation()}
         >
-          <X className="h-5 w-5 md:h-7 md:w-7" />
-        </button>
+          <button
+            onClick={onClose}
+            className="absolute -top-4 -right-4 z-10 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white text-gray-600 shadow-lg transition-transform hover:scale-110 md:-top-5 md:-right-5 md:h-14 md:w-14"
+            aria-label="Close form"
+          >
+            <X className="h-6 w-6 md:h-7 md:w-7" />
+          </button>
 
         <div className="mb-4 md:mb-6">
           <Link href="/" className="group">
@@ -336,6 +337,7 @@ const QuoteModal = ({
             )}
           </form>
         )}
+        </div>
       </div>
     </div>
   );
