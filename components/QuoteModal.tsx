@@ -156,30 +156,30 @@ const QuoteModal = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 animate-fade-in"
+      className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/60 p-3 sm:items-center sm:p-4 animate-fade-in"
       onClick={onClose}
     >
       <div
         ref={modalRef}
-        className="relative w-full max-w-lg rounded-3xl bg-white p-6 py-10 md:py-14 shadow-xl md:max-w-[716px] md:rounded-[39px] md:p-14"
+        className="relative my-auto w-full max-w-lg max-h-[95vh] overflow-y-auto rounded-2xl bg-white p-5 py-7 shadow-xl md:max-w-[716px] md:rounded-[32px] md:p-10 md:py-10"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute -top-4 -right-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white text-gray-600 shadow-lg transition-transform hover:scale-110 md:-top-6 md:-right-6 md:h-16 md:w-16"
+          className="absolute top-3 right-3 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white text-gray-600 shadow-lg transition-transform hover:scale-110 md:-top-5 md:-right-5 md:h-14 md:w-14"
           aria-label="Close form"
         >
-          <X className="h-6 w-6 md:h-8 md:w-8" />
+          <X className="h-5 w-5 md:h-7 md:w-7" />
         </button>
 
-        <div className="mb-6 md:mb-8">
+        <div className="mb-4 md:mb-6">
           <Link href="/" className="group">
             <Image
               src="/logo.jpg"
               alt="Vanta Vanta Logo"
               width={170}
               height={65}
-              className="h-[50px] w-auto object-contain md:h-[65px]"
+              className="h-[42px] w-auto object-contain md:h-[56px]"
             />
           </Link>
         </div>
@@ -197,7 +197,7 @@ const QuoteModal = ({
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-3 md:space-y-5">
             <div>
               <label
                 htmlFor="name"
@@ -214,7 +214,7 @@ const QuoteModal = ({
                 value={formData.name}
                 onChange={handleChange}
                 disabled={isSubmitting}
-                className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
+                className="mt-1 block h-11 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[8px] md:h-[52px] md:rounded-[10px]"
               />
             </div>
 
@@ -234,7 +234,7 @@ const QuoteModal = ({
                 value={formData.contact}
                 onChange={handleChange}
                 disabled={isSubmitting}
-                className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
+                className="mt-1 block h-11 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[8px] md:h-[52px] md:rounded-[10px]"
               />
             </div>
 
@@ -243,7 +243,7 @@ const QuoteModal = ({
                 {t("quote_form.whisk_label")}{" "}
                 <span className="text-red-500">*</span>
               </label>
-              <div className="mt-3 space-y-3 md:mt-4 md:space-y-4">
+              <div className="mt-2 space-y-2 md:mt-3 md:space-y-3">
                 <CustomCheckbox
                   id="oak"
                   name="oak"
@@ -282,7 +282,7 @@ const QuoteModal = ({
                 value={formData.quantity}
                 onChange={handleChange}
                 disabled={isSubmitting}
-                className="mt-1 block h-12 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[10px] md:h-[63px] md:rounded-[10px]"
+                className="mt-1 block h-11 w-full rounded-lg border border-black bg-transparent px-4 outline-none transition-colors focus:border-2 focus:border-[#0F543F] md:mt-[8px] md:h-[52px] md:rounded-[10px]"
               >
                 <option value="50">{t("quote_form.quantity_option_50")}</option>
                 <option value="100">
@@ -297,7 +297,7 @@ const QuoteModal = ({
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`group flex w-full cursor-pointer items-center justify-between rounded-lg px-6 py-3 text-lg font-medium text-white transition-colors md:rounded-md md:px-8 md:py-4 md:text-[26px] md:-tracking-[1.2px]
+              className={`group flex w-full cursor-pointer items-center justify-between rounded-lg px-5 py-3 text-base font-medium text-white transition-colors md:rounded-md md:px-7 md:py-3.5 md:text-[22px] md:-tracking-[1px]
                 ${isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-[#0F543F] hover:bg-[#0d5741]"}`}
             >
               <span>
@@ -305,10 +305,10 @@ const QuoteModal = ({
               </span>
 
               {isSubmitting ? (
-                <Loader2 className="h-6 w-6 animate-spin md:h-10 md:w-10" />
+                <Loader2 className="h-5 w-5 animate-spin md:h-8 md:w-8" />
               ) : (
                 <ArrowRight
-                  className="h-6 w-6 transition-transform group-hover:translate-x-1 md:h-10 md:w-10"
+                  className="h-5 w-5 transition-transform group-hover:translate-x-1 md:h-8 md:w-8"
                   aria-hidden="true"
                 />
               )}
@@ -324,7 +324,7 @@ const QuoteModal = ({
 
             <Link
               href="tel:+37061912200"
-              className="flex w-full items-center justify-center rounded-lg border-2 border-[#0F543F] bg-white px-6 py-3 text-center text-lg font-medium text-[#0F543F] transition-colors hover:bg-[#0F543F] hover:text-white md:rounded-md md:px-8 md:py-4 md:text-[26px] md:-tracking-[1.2px]"
+              className="flex w-full items-center justify-center rounded-lg border-2 border-[#0F543F] bg-white px-5 py-3 text-center text-base font-medium text-[#0F543F] transition-colors hover:bg-[#0F543F] hover:text-white md:rounded-md md:px-7 md:py-3.5 md:text-[22px] md:-tracking-[1px]"
             >
               {t("quote_form.call_button")}
             </Link>
